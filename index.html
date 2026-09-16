@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youssef Mohamed — Full-Stack Web Developer</title>
+  <meta name="description" content="Youssef Mohamed is a Full-Stack Web Developer and IT student building modern web applications and polished responsive websites. Explore HealthBridge and Flowly.">
+  <meta name="author" content="Youssef Mohamed">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Youssef Mohamed — Full-Stack Web Developer">
+  <meta property="og:description" content="Full-Stack Web Developer building modern web applications and polished responsive websites.">
+  <meta property="og:image" content="assets/hero-desktop.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Youssef Mohamed — Full-Stack Web Developer">
+  <meta name="twitter:description" content="Full-Stack Web Developer building modern web applications and polished responsive websites.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="Youssef Mohamed — home">
+        <span class="logo-mark" aria-hidden="true">YM</span>
+        <span class="logo-text">Youssef<strong>Mohamed</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="icon-btn" href="https://github.com/youssefmohammed12" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/youssef1g-mohamed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Let's Work Together</a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav aria-label="Mobile">
+        <ul class="mobile-nav-list">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-footer">
+        <a class="btn btn-primary btn-block" href="#contact">Let's Work Together</a>
+        <div class="mobile-socials">
+          <a class="icon-btn" href="https://github.com/youssefmohammed12" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/youssef1g-mohamed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow eyebrow-light">Full-Stack Web Developer</p>
+          <h1 id="hero-title">I build modern web applications and <span class="accent-text">polished digital experiences.</span></h1>
+          <p class="hero-lead">I develop responsive websites and practical full-stack applications with a focus on clean architecture, usability, security, and maintainable code.</p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost btn-ghost-light">Contact Me</a>
+          </div>
+          <div class="hero-meta">
+            <span class="hero-meta-item">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14l-3-3"/></svg>
+              IT Student — Class of 2028
+            </span>
+            <span class="hero-meta-item">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+              PHP · JavaScript · MySQL
+            </span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Preview of Youssef's work">
+          <figure class="hero-frame">
+            <img src="assets/hero-desktop.png" alt="Flowly SaaS landing page — desktop hero section with product board UI" width="1920" height="928">
+          </figure>
+          <aside class="hero-id-card">
+            <img src="assets/Youssef1.png" alt="Portrait of Youssef Mohamed" width="120" height="120">
+            <div>
+              <p class="hero-id-name">Youssef Mohamed</p>
+              <p class="hero-id-role">Full-Stack Web Developer</p>
+            </div>
+          </aside>
+          <a href="#project-healthbridge" class="hero-chip" aria-label="See HealthBridge project">
+            <img src="assets/03_patient_dashboard.png" alt="" width="96" height="60" aria-hidden="true">
+            <span><strong>HealthBridge</strong><small>Full-stack hospital platform</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 id="about-title">Developer in the making, already shipping real projects.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="about-photo-frame">
+              <img src="assets/Youssef1.png" alt="Youssef Mohamed — Full-Stack Web Developer" width="768" height="772">
+            </div>
+            <div class="about-photo-badges">
+              <span class="badge">IT Student</span>
+              <span class="badge">Full-Stack Focus</span>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p class="about-lead">I'm Youssef — an Information Technology student at Fayoum International Technological University, developing professionally toward full-stack web development.</p>
+            <p>I enjoy building complete web experiences: from responsive interfaces and interactive frontend systems to backend APIs, database-driven applications, authentication, business logic, and security-conscious development.</p>
+            <p>My portfolio demonstrates two complementary sides of development:</p>
+            <div class="about-points">
+              <div class="about-point">
+                <span class="about-point-num">01</span>
+                <div>
+                  <p class="about-point-title">HealthBridge <span class="about-point-tag">→ Full-stack application engineering</span></p>
+                  <p>A database-driven hospital management platform with authentication, role-based access control, and complex business workflows.</p>
+                </div>
+              </div>
+              <div class="about-point">
+                <span class="about-point-num">02</span>
+                <div>
+                  <p class="about-point-title">Flowly <span class="about-point-tag">→ Frontend, UI &amp; interaction development</span></p>
+                  <p>A polished SaaS landing page with a custom product UI, responsive layouts, accessible interactions, and SEO fundamentals.</p>
+                </div>
+              </div>
+            </div>
+            <p class="about-edu">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+              Currently studying at <strong>Fayoum International Technological University</strong> — expected graduation <strong>2028</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">A practical toolkit for building complete web applications.</h2>
+          <p class="section-sub">Organized by how I actually use them — from interface to database.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="m8 14-2 2 2 2M16 14l2 2-2 2"/></svg>
+            </div>
+            <h3>Frontend</h3>
+            <ul class="tag-list">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript ES6+</li><li>Vanilla JavaScript</li><li>Bootstrap 5</li><li>Responsive Design</li><li>DOM Manipulation</li><li>Form Validation</li><li>Accessibility</li><li>UI Implementation</li><li>Interactive UI</li><li>SEO Fundamentals</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17c4-1 5-8 8-8s4 5 8 4"/><path d="M2 21h20"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+            </div>
+            <h3>Backend</h3>
+            <ul class="tag-list">
+              <li>PHP 8+</li><li>Object-Oriented PHP</li><li>REST-style APIs</li><li>Authentication</li><li>Session Management</li><li>Role-Based Access Control</li><li>Server-side Validation</li><li>Business Logic</li><li>API Development</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>
+            </div>
+            <h3>Database</h3>
+            <ul class="tag-list">
+              <li>MySQL</li><li>MariaDB</li><li>SQL</li><li>Database Design</li><li>Relational Data Modeling</li><li>Foreign Keys</li><li>Constraints</li><li>PDO</li><li>Prepared Statements</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-2 0-3.5 1.6-3.5 3.5S10 9 12 9s3.5 1.6 3.5 3.5S14 16 12 16s-3.5-1.6-3.5-3.5"/><circle cx="12" cy="20.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3>Python</h3>
+            <ul class="tag-list">
+              <li>Python</li><li>Django</li>
+            </ul>
+            <p class="skill-note">Part of my development learning path — building on the same backend fundamentals I use with PHP.</p>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/></svg>
+            </div>
+            <h3>Tools</h3>
+            <ul class="tag-list">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>XAMPP</li><li>Composer</li><li>Figma</li><li>Chrome DevTools</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Development Practices</h3>
+            <ul class="tag-list">
+              <li>Modular Architecture</li><li>Reusable Components</li><li>Clean Code</li><li>Input Validation</li><li>Security-Conscious Development</li><li>Responsive Design</li><li>Accessibility</li><li>Debugging</li><li>Version Control</li><li>API-driven Architecture</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Featured Projects</p>
+          <h2 id="projects-title">Two projects. Two different strengths. One developer.</h2>
+          <p class="section-sub">Both projects are real, working builds — shown here to demonstrate range across the stack, not to rank one above the other.</p>
+        </div>
+
+        <div class="compare-grid reveal">
+          <div class="compare-card compare-hb">
+            <div class="compare-head">
+              <span class="compare-num">01</span>
+              <p class="compare-name">HealthBridge</p>
+            </div>
+            <p class="compare-focus">Full-Stack Application Engineering</p>
+            <ul class="compare-list">
+              <li>Backend &amp; business logic</li>
+              <li>Relational database design</li>
+              <li>REST-style JSON APIs</li>
+              <li>Authentication &amp; RBAC</li>
+              <li>Security &amp; audit logging</li>
+              <li>Complex multi-role workflows</li>
+            </ul>
+          </div>
+          <div class="compare-card compare-fl">
+            <div class="compare-head">
+              <span class="compare-num">02</span>
+              <p class="compare-name">Flowly</p>
+            </div>
+            <p class="compare-focus">Frontend &amp; UI Development</p>
+            <ul class="compare-list">
+              <li>Responsive UI &amp; UX</li>
+              <li>JavaScript interactions</li>
+              <li>Accessibility &amp; keyboard support</li>
+              <li>Landing-page design</li>
+              <li>SEO &amp; social metadata</li>
+              <li>Animations &amp; product presentation</li>
+            </ul>
+          </div>
+        </div>
+
+        <article class="project reveal" id="project-healthbridge" aria-labelledby="hb-title">
+          <header class="project-head">
+            <div>
+              <p class="project-eyebrow">Project 01</p>
+              <h3 class="project-title" id="hb-title">HealthBridge</h3>
+              <p class="project-cat">Full-Stack Web Application</p>
+            </div>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://youssefhealthbridge.freehosting.dev/" target="_blank" rel="noopener noreferrer">
+                Live Demo
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/youssefmohammed12/hospital-project" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </header>
+
+          <p class="project-desc">HealthBridge is a comprehensive hospital management and patient portal platform designed to connect patients, doctors, and administrators through a unified healthcare management system.</p>
+
+          <ul class="tech-row" aria-label="HealthBridge technology stack">
+            <li>PHP 8+</li><li>MySQL / MariaDB</li><li>JavaScript ES6+</li><li>HTML5</li><li>CSS3</li><li>PDO</li><li>REST-style JSON APIs</li><li>Composer</li><li>Git</li>
+          </ul>
+
+          <div class="feature-cols">
+            <div class="feature-col">
+              <h4><span class="feature-dot feature-dot-teal" aria-hidden="true"></span>Patient Portal</h4>
+              <ul>
+                <li>Health dashboard &amp; vitals</li>
+                <li>Appointments &amp; rescheduling</li>
+                <li>Four-step booking wizard</li>
+                <li>Electronic Medical Records</li>
+                <li>Medical history timeline</li>
+                <li>Prescription tracking</li>
+                <li>Notifications &amp; settings</li>
+              </ul>
+            </div>
+            <div class="feature-col">
+              <h4><span class="feature-dot feature-dot-blue" aria-hidden="true"></span>Doctor Workspace</h4>
+              <ul>
+                <li>Appointment queue</li>
+                <li>Schedule management</li>
+                <li>Clinical encounters</li>
+                <li>SOAP-style notes</li>
+                <li>Digital prescriptions</li>
+                <li>Reschedule negotiation</li>
+                <li>Ratings &amp; reviews</li>
+              </ul>
+            </div>
+            <div class="feature-col">
+              <h4><span class="feature-dot feature-dot-navy" aria-hidden="true"></span>Administration</h4>
+              <ul>
+                <li>Hospital analytics</li>
+                <li>Staff &amp; doctor management</li>
+                <li>Department management</li>
+                <li>Hospital settings</li>
+                <li>Audit trail</li>
+                <li>Administrative controls</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="highlight-grid">
+            <div class="highlight-card">
+              <h4>Backend</h4>
+              <ul>
+                <li>Object-oriented PHP with a service-layer architecture</li>
+                <li>Reusable business logic &amp; REST-style JSON endpoints</li>
+                <li>Server-side validation &amp; PDO database access</li>
+              </ul>
+            </div>
+            <div class="highlight-card">
+              <h4>Security</h4>
+              <ul>
+                <li>Session-based authentication &amp; role-based access control</li>
+                <li>Prepared statements, input validation &amp; secure output</li>
+                <li>Permission handling &amp; audit logging</li>
+              </ul>
+            </div>
+            <div class="highlight-card">
+              <h4>Database</h4>
+              <ul>
+                <li>Relational design with indexed tables &amp; constraints</li>
+                <li>Foreign keys across appointments, records &amp; prescriptions</li>
+                <li>Departments, notifications &amp; audit records</li>
+              </ul>
+            </div>
+            <div class="highlight-card">
+              <h4>Frontend</h4>
+              <ul>
+                <li>Vanilla JavaScript &amp; modular CSS</li>
+                <li>Responsive dashboards &amp; booking wizard</li>
+                <li>Modals &amp; dynamic API-driven content</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="arch" aria-label="HealthBridge application architecture">
+            <p class="arch-title">How a request flows</p>
+            <ol class="arch-flow">
+              <li class="arch-node"><span class="arch-node-label">Frontend</span><span class="arch-node-sub">Vanilla JS · Modular CSS</span></li>
+              <li class="arch-arrow" aria-hidden="true">↓</li>
+              <li class="arch-node"><span class="arch-node-label">Authentication / Validation / Response Layer</span></li>
+              <li class="arch-arrow" aria-hidden="true">↓</li>
+              <li class="arch-node"><span class="arch-node-label">Service Layer</span><span class="arch-node-sub">Reusable business logic</span></li>
+              <li class="arch-arrow" aria-hidden="true">↓</li>
+              <li class="arch-node"><span class="arch-node-label">PDO</span><span class="arch-node-sub">Prepared statements</span></li>
+              <li class="arch-arrow" aria-hidden="true">↓</li>
+              <li class="arch-node"><span class="arch-node-label">MySQL / MariaDB</span></li>
+            </ol>
+          </div>
+
+          <div class="gallery-wrap">
+            <p class="gallery-title">Interface gallery <span>— click any screenshot to enlarge</span></p>
+            <div class="gallery" data-gallery="healthbridge">
+              <figure class="g-item wide" tabindex="0" role="button" aria-label="Enlarge: HealthBridge landing page">
+                <img src="assets/01_landing_page.png" alt="HealthBridge public landing page with doctor search" loading="lazy" decoding="async">
+                <figcaption>Landing page</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge role-based login">
+                <img src="assets/02_login_page.png" alt="HealthBridge sign-in page with Admin, Patient and Doctor quick demo roles" loading="lazy" decoding="async">
+                <figcaption>Role-based login</figcaption>
+              </figure>
+              <figure class="g-item wide" tabindex="0" role="button" aria-label="Enlarge: HealthBridge patient dashboard">
+                <img src="assets/03_patient_dashboard.png" alt="HealthBridge patient dashboard with next appointment, health alerts and snapshot stats" loading="lazy" decoding="async">
+                <figcaption>Patient dashboard</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge booking wizard">
+                <img src="assets/04_patient_booking_wizard.png" alt="HealthBridge four-step appointment booking wizard at the confirmation step" loading="lazy" decoding="async">
+                <figcaption>Booking wizard</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge appointments">
+                <img src="assets/05_patient_appointments.png" alt="HealthBridge patient appointments list with status filters and reschedule actions" loading="lazy" decoding="async">
+                <figcaption>Appointments</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge prescriptions">
+                <img src="assets/06_patient_prescriptions.png" alt="HealthBridge prescriptions view with medications and PDF download" loading="lazy" decoding="async">
+                <figcaption>Prescriptions</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge medical history">
+                <img src="assets/07_patient_medical_history.png" alt="HealthBridge medical history and timeline with diagnoses and events" loading="lazy" decoding="async">
+                <figcaption>Medical history</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge doctor dashboard">
+                <img src="assets/08_doctor_dashboard.png" alt="HealthBridge doctor dashboard with patient queue and today's visits" loading="lazy" decoding="async">
+                <figcaption>Doctor dashboard</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge clinical workspace">
+                <img src="assets/09_doctor_workspace.png" alt="HealthBridge clinical workspace with patient vitals, visit state and tabs" loading="lazy" decoding="async">
+                <figcaption>Clinical workspace</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge admin analytics">
+                <img src="assets/10_admin_dashboard.png" alt="HealthBridge admin analytics dashboard with KPIs and appointment charts" loading="lazy" decoding="async">
+                <figcaption>Admin analytics</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge doctor management">
+                <img src="assets/11_admin_doctor_management.png" alt="HealthBridge admin doctor management view with profile and audit tabs" loading="lazy" decoding="async">
+                <figcaption>Doctor management</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p class="project-note">HealthBridge is a personal portfolio project demonstrating full-stack development — a complete multi-role platform, not a commercial product.</p>
+        </article>
+
+        <article class="project reveal" id="project-flowly" aria-labelledby="fl-title">
+          <header class="project-head">
+            <div>
+              <p class="project-eyebrow">Project 02</p>
+              <h3 class="project-title" id="fl-title">Flowly</h3>
+              <p class="project-cat">Frontend / SaaS Landing Page</p>
+            </div>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm btn-coral" href="https://youssefmohammed12.github.io/Flowly/" target="_blank" rel="noopener noreferrer">
+                Live Demo
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/youssefmohammed12/Flowly" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </header>
+
+          <p class="project-desc">Flowly is a fictional team and project-management SaaS concept — one calm workspace for projects, tasks, deadlines, team communication, progress, and workload management. It was created as a professional frontend portfolio project.</p>
+
+          <ul class="tech-row" aria-label="Flowly technology stack">
+            <li>HTML5</li><li>CSS3</li><li>Vanilla JavaScript</li><li>Bootstrap 5.3.3</li><li>Git</li><li>GitHub</li><li>GitHub Pages</li>
+          </ul>
+
+          <div class="feature-cols feature-cols-2">
+            <div class="feature-col">
+              <h4><span class="feature-dot feature-dot-coral" aria-hidden="true"></span>Product &amp; UI</h4>
+              <ul>
+                <li>Responsive SaaS landing page</li>
+                <li>Custom product dashboard UI</li>
+                <li>Interactive product demo modal</li>
+                <li>Login &amp; signup prototypes</li>
+                <li>Monthly / annual pricing toggle</li>
+                <li>FAQ accordion</li>
+                <li>Responsive mobile navigation</li>
+              </ul>
+            </div>
+            <div class="feature-col">
+              <h4><span class="feature-dot feature-dot-coral" aria-hidden="true"></span>Interaction &amp; Quality</h4>
+              <ul>
+                <li>Scroll reveal animations &amp; animated statistics</li>
+                <li>Product UI microinteractions</li>
+                <li>Accessible, keyboard-friendly modals</li>
+                <li>Reduced-motion support</li>
+                <li>Newsletter frontend prototype</li>
+                <li>SEO &amp; Open Graph metadata</li>
+                <li>Favicon &amp; canonical URL support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="gallery-wrap">
+            <p class="gallery-title">Interface gallery <span>— desktop &amp; mobile</span></p>
+            <div class="gallery" data-gallery="flowly">
+              <figure class="g-item wide" tabindex="0" role="button" aria-label="Enlarge: Flowly desktop hero">
+                <img src="assets/hero-desktop.png" alt="Flowly desktop hero section with headline and product board preview" loading="lazy" decoding="async">
+                <figcaption>Desktop hero</figcaption>
+              </figure>
+              <figure class="g-item phone" tabindex="0" role="button" aria-label="Enlarge: Flowly mobile home">
+                <img src="assets/mobile-home.png" alt="Flowly mobile home view with condensed layout and call-to-action buttons" loading="lazy" decoding="async">
+                <figcaption>Mobile home</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: Flowly product demo modal">
+                <img src="assets/product-demo.png" alt="Flowly interactive product demo modal with board, timeline and workload views" loading="lazy" decoding="async">
+                <figcaption>Product demo modal</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: Flowly login modal">
+                <img src="assets/login-modal.png" alt="Flowly login modal prototype with email and password fields" loading="lazy" decoding="async">
+                <figcaption>Login prototype</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: Flowly signup modal">
+                <img src="assets/signup-modal.png" alt="Flowly signup modal prototype with workspace creation form" loading="lazy" decoding="async">
+                <figcaption>Signup prototype</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: Flowly pricing section">
+                <img src="assets/pricing.png" alt="Flowly pricing section with monthly and annual toggle and three plans" loading="lazy" decoding="async">
+                <figcaption>Pricing &amp; toggle</figcaption>
+              </figure>
+              <figure class="g-item phone" tabindex="0" role="button" aria-label="Enlarge: Flowly mobile menu">
+                <img src="assets/mobile-menu.png" alt="Flowly mobile navigation menu overlay" loading="lazy" decoding="async">
+                <figcaption>Mobile menu</figcaption>
+              </figure>
+              <figure class="g-item tall" tabindex="0" role="button" aria-label="Enlarge: Flowly full page">
+                <img src="assets/full-page-desktop.png" alt="Flowly full landing page — complete page from hero to footer" loading="lazy" decoding="async">
+                <figcaption>Full page overview</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p class="project-note">Flowly is a fictional product concept built as a frontend portfolio project — a design and development showcase, not a real company or service.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">What I can help you build.</h2>
+          <p class="section-sub">Realistic, hands-on web development — from a single landing page to a database-driven application.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>Landing Page Development</h3>
+            <p>Professional, responsive landing pages for businesses, services, products, and personal brands — built to convert and easy to maintain.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+            </div>
+            <h3>Frontend Website Development</h3>
+            <p>Responsive websites built with HTML, CSS, JavaScript, and Bootstrap — clean layouts, smooth interactions, and solid accessibility fundamentals.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3>Website Improvement</h3>
+            <p>Improving existing websites through responsive fixes, UI improvements, frontend functionality, and usability upgrades that make a real difference.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg>
+            </div>
+            <h3>Full-Stack Web Development</h3>
+            <p>Database-driven web applications using PHP, MySQL, JavaScript, authentication, APIs, and business logic — engineered with security in mind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Development Process</p>
+          <h2 id="process-title">How I approach every project.</h2>
+        </div>
+        <ol class="process-grid">
+          <li class="process-step reveal">
+            <span class="process-num">01</span>
+            <h3>Understand</h3>
+            <p>Project goals, users, requirements, and desired functionality.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">02</span>
+            <h3>Plan</h3>
+            <p>Structure, components, database, and application logic.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">03</span>
+            <h3>Design</h3>
+            <p>A responsive and intuitive user interface.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">04</span>
+            <h3>Develop</h3>
+            <p>Frontend, backend, APIs, database logic, validation, and interactions.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">05</span>
+            <h3>Test</h3>
+            <p>Functionality, responsiveness, accessibility, and edge cases.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="process-num">06</span>
+            <h3>Refine</h3>
+            <p>Usability, code quality, consistency, and overall experience.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Education</p>
+          <h2 id="edu-title">Learning by building.</h2>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+          </div>
+          <div class="edu-body">
+            <h3>Fayoum International Technological University</h3>
+            <p class="edu-degree">Information Technology Student</p>
+            <div class="edu-badges">
+              <span class="badge">Currently studying</span>
+              <span class="badge badge-accent">Expected graduation · 2028</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="eyebrow eyebrow-light">Contact</p>
+            <h2 id="contact-title">Let's build something useful.</h2>
+            <p class="contact-lead">Have a website, landing page, or web application in mind? Let's talk about it.</p>
+            <ul class="contact-methods">
+              <li>
+                <a href="mailto:yousefmohamed1e@gmail.com">
+                  <span class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                  </span>
+                  <span><small>Email</small>yousefmohamed1e@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/youssefmohammed12" target="_blank" rel="noopener noreferrer">
+                  <span class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                  </span>
+                  <span><small>GitHub</small>github.com/youssefmohammed12</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/youssef1g-mohamed" target="_blank" rel="noopener noreferrer">
+                  <span class="contact-method-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                  </span>
+                  <span><small>LinkedIn</small>linkedin.com/in/youssef1g-mohamed</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form-wrap reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="cf-name">Name</label>
+                  <input type="text" id="cf-name" name="name" autocomplete="name" required placeholder="Your name">
+                </div>
+                <div class="form-field">
+                  <label for="cf-email">Email</label>
+                  <input type="email" id="cf-email" name="email" autocomplete="email" required placeholder="you@example.com">
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="cf-subject">Subject</label>
+                <input type="text" id="cf-subject" name="subject" required placeholder="What would you like to build?">
+              </div>
+              <div class="form-field">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+              <p class="form-note">This form is frontend-ready and waiting for backend integration — for now, the most reliable way to reach me is the email above.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer" aria-label="Back to top">
+          <span class="logo-mark" aria-hidden="true">YM</span>
+          <span class="logo-text">Youssef<strong>Mohamed</strong></span>
+        </a>
+        <p>Full-Stack Web Developer building modern web applications and polished responsive websites.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:yousefmohamed1e@gmail.com">yousefmohamed1e@gmail.com</a>
+        <div class="footer-socials">
+          <a class="icon-btn" href="https://github.com/youssefmohammed12" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.15c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/youssef1g-mohamed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Youssef Mohamed. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot preview" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close preview">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous screenshot">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <figure class="lb-figure">
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-next" id="lbNext" aria-label="Next screenshot">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
