@@ -37,6 +37,18 @@ A fictional team and project-management SaaS concept built as a professional fro
 - **Live demo:** [youssefmohammed12.github.io/Flowly](https://youssefmohammed12.github.io/Flowly/)
 - **Repository:** [github.com/youssefmohammed12/Flowly](https://github.com/youssefmohammed12/Flowly)
 
+### NOVA Home
+
+A full-stack furniture and home-decor e-commerce website for the Egyptian market, with product discovery, customer accounts, Cash on Delivery checkout, and an administrator portal.
+
+- **Technologies:** PHP 8.1+, MariaDB / MySQL, PDO, HTML5, hand-written CSS, Vanilla ES2020+ JavaScript, Bootstrap 5.3.8, Swiper 14.3.0, Playwright
+- **Highlights:** Search and filtering, product details, Quick View, wishlist, shopping cart, Cash on Delivery checkout, customer accounts and order history, product and category management, order-status workflow, store settings, session-based access control, CSRF protection, and prepared statements.
+- **Customer demo:** [nova-home.fast-page.org/account/login.php](https://nova-home.fast-page.org/account/login.php)
+- **Admin demo:** [nova-home.fast-page.org/admin/login.php](https://nova-home.fast-page.org/admin/login.php)
+- **Repository:** [github.com/youssefmohammed12/Nova](https://github.com/youssefmohammed12/Nova)
+
+NOVA Home is a portfolio demonstration. Its interactive demos use shared, mutable demonstration data, and checkout supports Cash on Delivery only.
+
 ## Education
 
 **Fayoum International Technological University**  
