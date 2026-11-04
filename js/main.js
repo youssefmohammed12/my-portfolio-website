@@ -185,6 +185,14 @@
       status.className = "form-status pending";
 
       try {
+        /* Web3Forms reserves "subject" for the email title, so mirror it
+           under a regular field to include it in the notification body too. */
+        var visibleSubject = form.querySelector('[name="subject"]');
+        var emailSubject = form.querySelector('[name="project_subject"]');
+        if (visibleSubject && emailSubject) {
+          emailSubject.value = visibleSubject.value.trim();
+        }
+
         var payload = Object.fromEntries(new FormData(form).entries());
         var response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
