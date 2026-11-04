@@ -42,9 +42,9 @@ A comprehensive hospital management and patient portal platform that connects pa
 - **Live demo:** [youssefhealthbridge.freehosting.dev](https://youssefhealthbridge.freehosting.dev/)
 - **Repository:** [github.com/youssefmohammed12/hospital-project](https://github.com/youssefmohammed12/hospital-project)
 
-### Flowly
+### Flowly — [Read the case study](flowly-case-study.html)
 
-A fictional team and project-management SaaS concept built as a professional frontend portfolio project.
+A fictional team and project-management SaaS concept built as a professional frontend portfolio project. The case study documents the product concept, frontend implementation, interaction design, accessibility considerations, and local QA findings.
 
 - **Technologies:** HTML5, CSS3, Vanilla JavaScript, Bootstrap 5.3.3, Git, GitHub, GitHub Pages
 - **Highlights:** Responsive SaaS landing page, custom product dashboard UI, interactive product demo, login and signup prototypes, pricing toggle, FAQ accordion, mobile navigation, keyboard-friendly modals, and reduced-motion support.
@@ -67,6 +67,7 @@ NOVA Home is a portfolio demonstration. Its interactive demos use shared, mutabl
 
 - Static HTML, CSS, and JavaScript hosted on GitHub Pages.
 - `launchboard-case-study.html` documents the Launchboard product workflow and architecture.
+- `flowly-case-study.html` documents the Flowly frontend concept, design decisions, interactions, and QA.
 - `robots.txt` and `sitemap.xml` provide basic search-engine discovery metadata.
 - The contact form uses the Web3Forms browser-side API; its access key is public by design.
 
