@@ -54,14 +54,44 @@
 .case-decision-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
 .case-decision-grid article { padding: 1.4rem; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
 .case-decision-grid h3 { font-size: 1rem; margin-bottom: .55rem; }
-.case-gallery { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; align-items: start; }
-.case-gallery figure { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: var(--shadow-sm); }
-.case-gallery figure a { display: block; background: #e9eef4; }
-.case-gallery img { width: 100%; aspect-ratio: 1.45 / 1; object-fit: cover; object-position: top; transition: transform .25s ease; }
-.case-gallery a:hover img { transform: scale(1.025); }
-.case-gallery figcaption { display: grid; gap: .2rem; padding: .95rem 1rem 1.05rem; }
-.case-gallery figcaption strong { font-family: var(--font-head); font-size: .92rem; }
-.case-gallery figcaption span { color: var(--muted); font-size: .8rem; }
+/* Case-study galleries use the same image frames as the main portfolio. */
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+  align-items: stretch;
+}
+.case-gallery-landscape { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.case-gallery-interface { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gallery-subheading {
+  margin: 2rem 0 1rem;
+  color: var(--ink);
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  letter-spacing: -.02em;
+}
+.gallery-subheading:first-child { margin-top: 0; }
+.case-gallery .g-item { min-width: 0; }
+.case-gallery-portrait .g-item img {
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #eef2f7;
+}
+.case-detail-showcase { margin-top: 1.25rem; }
+.case-mobile-showcase { margin-top: 1.25rem; }
+.case-mobile-showcase .g-item-featured img { height: 560px; }
+
+@media (max-width: 900px) {
+  .case-gallery,
+  .case-gallery-landscape,
+  .case-gallery-interface { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .case-gallery,
+  .case-gallery-landscape,
+  .case-gallery-interface { grid-template-columns: 1fr; }
+  .case-mobile-showcase .g-item-featured img { height: 460px; }
+}
 .case-small-note { font-size: .86rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 1rem; }
 .case-outro { padding: 78px 0; background: radial-gradient(650px 320px at 90% 0%, rgba(13,148,136,.17), transparent 62%), var(--navy); color: #cbd5e1; }
 .case-outro h2 { color: #f8fafc; margin-bottom: .7rem; }
@@ -75,6 +105,23 @@
   .case-two-col { grid-template-columns: 1fr; gap: 1.4rem; }
   .case-feature-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .case-decision-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 380px) {
+  .case-container { width: min(100% - 2rem, 1120px); }
+  .case-nav { gap: .45rem; }
+  .case-nav .logo { min-width: 0; gap: .4rem; }
+  .case-nav .logo-mark { width: 32px; height: 32px; flex: 0 0 32px; }
+  .case-nav .logo-text { font-size: .78rem; }
+  .case-nav .logo-text strong { margin-left: .15rem; }
+  .case-nav-actions { min-width: 0; flex: 0 1 auto; gap: .35rem; }
+  .case-nav-actions .btn {
+    max-width: 108px;
+    padding: .42rem .5rem;
+    font-size: .68rem;
+    line-height: 1.15;
+    white-space: normal;
+    text-align: center;
+  }
 }
 @media (max-width: 640px) {
   .case-container { width: min(100% - 2rem, 1120px); }
@@ -91,4 +138,23 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .case-gallery img { transition: none; }
+}
+
+/* Keep the compact case-study header inside the narrowest phones. */
+@media (max-width: 380px) {
+  .case-hero h1 { font-size: clamp(2.6rem, 12vw, 3.2rem); }
+  .case-nav { gap: .45rem; }
+  .case-nav .logo { min-width: 0; gap: .4rem; }
+  .case-nav .logo-mark { width: 32px; height: 32px; flex: 0 0 32px; }
+  .case-nav .logo-text { font-size: .78rem; }
+  .case-nav .logo-text strong { margin-left: .15rem; }
+  .case-nav-actions { min-width: 0; flex: 0 1 auto; gap: .35rem; }
+  .case-nav-actions .btn {
+    max-width: 108px;
+    padding: .42rem .5rem;
+    font-size: .68rem;
+    line-height: 1.15;
+    white-space: normal;
+    text-align: center;
+  }
 }
