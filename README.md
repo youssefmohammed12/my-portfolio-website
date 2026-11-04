@@ -2,22 +2,36 @@
 
 Personal portfolio for Youssef Mohamed, an Information Technology student developing professionally toward full-stack web development. The portfolio highlights modern web applications and polished responsive websites, with attention to clean architecture, usability, security, and maintainable code.
 
+**Live website:** [youssefmohammed12.github.io/my-portfolio-website](https://youssefmohammed12.github.io/my-portfolio-website/)
+
 ## About Me
 
-I build complete web experiences, from responsive and interactive interfaces to backend APIs, database-driven applications, authentication, business logic, and security-conscious development.
+I build complete web experiences, from responsive React interfaces to backend APIs, database-driven applications, authentication, business logic, and security-conscious development. Featured work includes Launchboard, HealthBridge, NOVA Home, and Flowly.
 
 ## Skills & Technologies
 
 | Area | Skills |
 | --- | --- |
-| Frontend | HTML5, CSS3, JavaScript ES6+, Vanilla JavaScript, Bootstrap 5, Responsive Design, DOM Manipulation, Form Validation, Accessibility, UI Implementation, Interactive UI, SEO Fundamentals |
-| Backend | PHP 8+, Object-Oriented PHP, REST-style APIs, Authentication, Session Management, Role-Based Access Control, Server-side Validation, Business Logic, API Development |
-| Database | MySQL, MariaDB, SQL, Database Design, Relational Data Modeling, Foreign Keys, Constraints, PDO, Prepared Statements |
+| Frontend | HTML5, CSS3, JavaScript ES6+, React 18, TypeScript, Vite 6, Tailwind CSS v4, Vanilla JavaScript, Bootstrap 5, Responsive Design, Accessibility, UI Implementation, SEO Fundamentals |
+| Backend | PHP 8+, Node.js, Express 5, TypeScript, Object-Oriented PHP, REST-style APIs, Authentication, Session Management, Role-Based Access Control, Server-side Validation, Business Logic, API Development |
+| Database | MySQL, MariaDB, TiDB Cloud, SQL, Database Design, Relational Data Modeling, Foreign Keys, Constraints, PDO, Prepared Statements |
 | Python | Python, Django |
-| Tools | Git, GitHub, VS Code, XAMPP, Composer, Figma, Chrome DevTools |
-| Development Practices | Modular Architecture, Reusable Components, Clean Code, Input Validation, Security-Conscious Development, Debugging, Version Control, API-driven Architecture |
+| Tools | Git, GitHub, GitHub Actions, Vercel, VS Code, XAMPP, Composer, Figma, Chrome DevTools |
+| Development Practices | Modular Architecture, Reusable Components, Clean Code, Input Validation, Security-Conscious Development, Automated Testing, Continuous Integration, Debugging, Version Control, API-driven Architecture |
 
 ## Featured Projects
+
+### Launchboard — [Read the case study](launchboard-case-study.html)
+
+A personal workspace for tracking jobs, internships, and freelance opportunities discovered elsewhere, with application records, interviews, contacts, deadlines, and follow-ups in one place.
+
+- **Technologies:** React 18, TypeScript, Vite 6, Tailwind CSS v4, Node.js, Express 5, Zod, TiDB Cloud Serverless, MySQL-compatible SQL, Vitest, GitHub Actions, Vercel
+- **Highlights:** Opportunity dashboard and list/board pipeline, contacts, interview rounds, application-material metadata, activity history, calendar, deadlines, reports, CSV import/export, JSON backup/restore, and separate browser-only and authenticated API workspaces.
+- **Engineering:** Shared TypeScript domain package, account authentication and recovery, database-backed sessions, CSRF protection, automated frontend/server tests, and CI builds.
+- **Live app:** [launchboard-drab.vercel.app](https://launchboard-drab.vercel.app)
+- **Repository:** Private for now.
+
+Launchboard is a personal opportunity tracker, not a job board or freelancing marketplace. The local browser workspace and authenticated API workspace are separate and do not synchronize automatically.
 
 ### HealthBridge
 
@@ -49,6 +63,13 @@ A full-stack furniture and home-decor e-commerce website for the Egyptian market
 
 NOVA Home is a portfolio demonstration. Its interactive demos use shared, mutable demonstration data, and checkout supports Cash on Delivery only.
 
+## Portfolio implementation
+
+- Static HTML, CSS, and JavaScript hosted on GitHub Pages.
+- `launchboard-case-study.html` documents the Launchboard product workflow and architecture.
+- `robots.txt` and `sitemap.xml` provide basic search-engine discovery metadata.
+- The contact form uses the Web3Forms browser-side API; its access key is public by design.
+
 ## Education
 
 **Fayoum International Technological University**  
@@ -56,6 +77,8 @@ Information Technology Student — Currently studying
 Expected graduation: 2028
 
 ## Contact
+
+The portfolio contact form is connected to Web3Forms and submits directly from the browser. It does not require a separate backend or database. The Web3Forms access key is intentionally public and is stored in the form markup; do not place private credentials in frontend files.
 
 - GitHub: [github.com/youssefmohammed12](https://github.com/youssefmohammed12)
 - LinkedIn: [linkedin.com/in/youssef1g-mohamed](https://www.linkedin.com/in/youssef1g-mohamed)

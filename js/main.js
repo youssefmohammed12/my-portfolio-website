@@ -118,7 +118,7 @@
   function closeLightbox() {
     lightbox.hidden = true;
     document.body.style.overflow = "";
-    lbImg.src = "";
+    lbImg.removeAttribute("src");
     if (lastFocused) lastFocused.focus();
   }
 
@@ -158,20 +158,59 @@
     }
   });
 
-  /* ---------- contact form (frontend-ready demo) ---------- */
+  /* ---------- contact form (Web3Forms) ---------- */
   var form = document.getElementById("contactForm");
   var status = document.getElementById("formStatus");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    if (!form.checkValidity()) {
-      status.textContent = "Please fill in all fields with a valid email address.";
-      status.className = "form-status err";
-      form.reportValidity();
-      return;
-    }
-    status.textContent = "Thanks for reaching out! This demo form is not connected to a backend yet — please email me directly at yousefmohamed1e@gmail.com and I'll get back to you.";
-    status.className = "form-status ok";
-    form.reset();
-  });
+  if (form && status) {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        status.textContent = "Please complete every field and check that your email address is valid.";
+        status.className = "form-status err";
+        form.reportValidity();
+        return;
+      }
+
+      var submitButton = form.querySelector('button[type="submit"]');
+      var submitLabel = submitButton ? submitButton.querySelector(".submit-label") : null;
+      var originalLabel = submitLabel ? submitLabel.textContent : "Send Message";
+
+      if (submitButton && submitButton.disabled) return;
+      if (submitButton) submitButton.disabled = true;
+      form.setAttribute("aria-busy", "true");
+      if (submitLabel) submitLabel.textContent = "Sending...";
+      status.textContent = "Sending your message securely...";
+      status.className = "form-status pending";
+
+      try {
+        var payload = Object.fromEntries(new FormData(form).entries());
+        var response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+        var result = await response.json().catch(function () { return null; });
+
+        if (!response.ok || !result || result.success !== true) {
+          throw new Error("The form service did not accept the submission.");
+        }
+
+        status.textContent = "Thanks for reaching out! Your message was sent successfully. I'll reply to your email as soon as I can.";
+        status.className = "form-status ok";
+        form.reset();
+      } catch (error) {
+        status.textContent = "I couldn't send your message right now. Please email me directly at yousefmohamed1e@gmail.com and I'll get back to you.";
+        status.className = "form-status err";
+      } finally {
+        if (submitButton) submitButton.disabled = false;
+        if (submitLabel) submitLabel.textContent = originalLabel;
+        form.removeAttribute("aria-busy");
+      }
+    });
+  }
 })();

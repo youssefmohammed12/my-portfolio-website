@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Launchboard Case Study — Youssef Mohamed</title>
+  <meta name="description" content="A technical case study of Launchboard: a React and TypeScript opportunity workspace with browser-based and authenticated API data modes, Express, TiDB Cloud, and Vercel.">
+  <meta name="author" content="Youssef Mohamed">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://youssefmohammed12.github.io/my-portfolio-website/launchboard-case-study.html">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://youssefmohammed12.github.io/my-portfolio-website/launchboard-case-study.html">
+  <meta property="og:title" content="Launchboard — Full-Stack Product Case Study">
+  <meta property="og:description" content="How I built an opportunity-management workspace with React, TypeScript, an Express API, and TiDB Cloud.">
+  <meta property="og:image" content="https://youssefmohammed12.github.io/my-portfolio-website/assets/launchboard/dashboard.png">
+  <meta property="og:image:alt" content="Launchboard dashboard showing pipeline summaries, upcoming deadlines, and recent activity">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case-study.css">
+</head>
+<body class="case-study-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="case-header">
+    <div class="case-container case-nav">
+      <a href="index.html#home" class="logo" aria-label="Youssef Mohamed — portfolio home">
+        <span class="logo-mark" aria-hidden="true">YM</span>
+        <span class="logo-text">Youssef<strong>Mohamed</strong></span>
+      </a>
+      <div class="case-nav-actions">
+        <a class="btn btn-ghost btn-sm" href="index.html#projects">Back to portfolio</a>
+        <a class="btn btn-primary btn-sm" href="https://launchboard-drab.vercel.app" target="_blank" rel="noopener noreferrer">Open Launchboard <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero">
+      <div class="case-container">
+        <p class="eyebrow eyebrow-light">Project case study · 01</p>
+        <p class="case-overline">Product engineering / Personal project</p>
+        <h1>Launchboard<span>.</span></h1>
+        <p class="case-hero-lead">A focused workspace for collecting opportunities and managing the work behind each application — from the first lead to interviews, deadlines, and follow-ups.</p>
+        <div class="case-hero-actions">
+          <a class="btn btn-primary" href="https://launchboard-drab.vercel.app" target="_blank" rel="noopener noreferrer">Explore the live app <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost btn-ghost-light" href="index.html#projects">View all projects</a>
+        </div>
+        <figure class="case-hero-shot">
+          <img src="assets/launchboard/dashboard.png" alt="Launchboard dashboard with opportunity summary cards, upcoming deadlines, and recent activity" width="1600" height="1000">
+          <figcaption>Dashboard overview · sample workspace data</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-facts" aria-label="Project summary">
+      <div class="case-container case-facts-grid">
+        <div><span>Product</span><strong>Opportunity manager</strong></div>
+        <div><span>Frontend</span><strong>React · TypeScript</strong></div>
+        <div><span>Backend</span><strong>Node.js · Express</strong></div>
+        <div><span>Deployment</span><strong>Vercel · TiDB Cloud</strong></div>
+      </div>
+    </section>
+
+    <section class="case-section" id="overview">
+      <div class="case-container case-two-col">
+        <div class="case-section-intro">
+          <p class="eyebrow">01 / The idea</p>
+          <h2>Keep every opportunity moving.</h2>
+        </div>
+        <div class="case-copy">
+          <p>Job, internship, and freelance opportunities are usually discovered across different websites and conversations. Once saved, the follow-up work can become fragmented: application status in one place, interview notes somewhere else, and important dates in a calendar or message thread.</p>
+          <p>Launchboard brings that personal workflow into one place. It is an organizer for opportunities found elsewhere — not a job board, recruitment platform, or freelancing marketplace.</p>
+          <div class="case-callout"><strong>Product goal</strong><span>Make it easy to capture an opportunity, understand its current status, and see the next action without losing the context around it.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-section-alt">
+      <div class="case-container">
+        <div class="case-section-heading">
+          <p class="eyebrow">02 / The workflow</p>
+          <h2>From a saved lead to a complete application record.</h2>
+          <p>The interface is organized around the information needed to manage an opportunity over time.</p>
+        </div>
+        <div class="case-feature-grid">
+          <article class="case-feature"><span>01</span><h3>See the pipeline</h3><p>A dashboard summarizes active opportunities, status, upcoming activity, and recent changes.</p></article>
+          <article class="case-feature"><span>02</span><h3>Manage opportunities</h3><p>Create, search, filter, sort, and organize records in list or board views, with priorities, tags, deadlines, and notes.</p></article>
+          <article class="case-feature"><span>03</span><h3>Keep the context</h3><p>Link contacts, interview rounds, application-material metadata, and an activity history to each opportunity.</p></article>
+          <article class="case-feature"><span>04</span><h3>Plan and review</h3><p>Use Calendar, Deadlines, and Reports, then move data with CSV import/export or a full JSON backup.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="architecture">
+      <div class="case-container">
+        <div class="case-section-heading">
+          <p class="eyebrow">03 / Architecture</p>
+          <h2>Two data modes, with a clear boundary.</h2>
+          <p>The browser-only workspace is the default. An authenticated workspace is available separately and uses the hosted API and database. The two modes do not synchronize automatically.</p>
+        </div>
+
+        <div class="case-modes">
+          <article class="case-mode case-mode-local">
+            <span class="case-mode-label">Default mode</span>
+            <h3>Browser-only workspace</h3>
+            <div class="case-flow">
+              <div class="case-flow-node"><strong>React frontend</strong><small>Local workspace UI</small></div>
+              <span class="case-flow-arrow" aria-hidden="true">↓</span>
+              <div class="case-flow-node"><strong>Persistence adapter</strong><small>Browser localStorage</small></div>
+            </div>
+            <p>Works without an account, backend, or database. Records stay in that browser and are not automatically shared with another device.</p>
+          </article>
+          <article class="case-mode case-mode-api">
+            <span class="case-mode-label">Opt-in mode</span>
+            <h3>Authenticated API workspace</h3>
+            <div class="case-flow">
+              <div class="case-flow-node"><strong>React frontend</strong><small>HTTPS requests</small></div>
+              <span class="case-flow-arrow" aria-hidden="true">↓</span>
+              <div class="case-flow-node"><strong>Vercel API · Express 5</strong><small>Validation · authentication · business logic</small></div>
+              <span class="case-flow-arrow" aria-hidden="true">↓</span>
+              <div class="case-flow-node"><strong>TiDB Cloud Serverless</strong><small>MySQL-compatible relational storage</small></div>
+            </div>
+            <p>Account data is stored on the server and scoped to the authenticated account. The production application and API are deployed on Vercel.</p>
+          </article>
+        </div>
+
+        <div class="case-copy case-architecture-note">
+          <p><strong>Why keep the modes separate?</strong> The local workspace remains quick to try and usable without provisioning an account. The API workspace provides account-based persistence. Moving local records into an account is an explicit migration with a preview and backup safeguard — it is not silent background synchronization.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-section-alt">
+      <div class="case-container">
+        <div class="case-section-heading">
+          <p class="eyebrow">04 / Engineering decisions</p>
+          <h2>Shared rules, explicit persistence, and account boundaries.</h2>
+        </div>
+        <div class="case-decision-grid">
+          <article><h3>Shared TypeScript domain</h3><p>A small workspace package holds shared types, validation rules, date helpers, limits, and backup normalization so frontend and server code can use the same domain definitions.</p></article>
+          <article><h3>Separate persistence adapters</h3><p>The UI can work with browser storage or the HTTP API without pretending that local and account data are one automatically synchronized store.</p></article>
+          <article><h3>API validation and ownership</h3><p>The Express API validates incoming data and scopes records to the authenticated account rather than trusting client-provided ownership.</p></article>
+          <article><h3>Security-conscious sessions</h3><p>The authenticated flow uses Argon2id password hashing, database-backed HttpOnly sessions, CSRF protection, origin checks, and account verification and recovery workflows.</p></article>
+          <article><h3>Data portability</h3><p>CSV supports tabular transfer, while JSON is the full-fidelity backup format for nested records, interviews, contacts, materials, activity, and archived data.</p></article>
+          <article><h3>Deliberate operations</h3><p>Database migrations are explicit release actions. Production credentials stay in hosting environment settings rather than in the frontend or repository.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-container">
+        <div class="case-section-heading">
+          <p class="eyebrow">05 / Interface</p>
+          <h2>Designed around the work, not just the records.</h2>
+          <p>Selected screens from the current application. Open an image to view it at full size.</p>
+        </div>
+        <div class="case-gallery">
+          <figure><a href="assets/launchboard/dashboard.png" target="_blank" rel="noopener noreferrer"><img src="assets/launchboard/dashboard.png" alt="Launchboard dashboard showing pipeline summaries, deadlines, and recent activity" loading="lazy" decoding="async"></a><figcaption><strong>Dashboard</strong><span>Pipeline overview and next actions</span></figcaption></figure>
+          <figure><a href="assets/launchboard/opportunities.png" target="_blank" rel="noopener noreferrer"><img src="assets/launchboard/opportunities.png" alt="Launchboard opportunities list with application records and status controls" loading="lazy" decoding="async"></a><figcaption><strong>Opportunity pipeline</strong><span>Organize and review saved opportunities</span></figcaption></figure>
+          <figure><a href="assets/launchboard/opportunity-details.png" target="_blank" rel="noopener noreferrer"><img src="assets/launchboard/opportunity-details.png" alt="Launchboard opportunity record showing linked contact, interview, application material metadata, and activity history" loading="lazy" decoding="async"></a><figcaption><strong>Opportunity details</strong><span>Keep interviews, contacts, materials, and history together</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-section-alt">
+      <div class="case-container case-two-col">
+        <div class="case-section-intro">
+          <p class="eyebrow">06 / Quality and delivery</p>
+          <h2>Built, tested, and deployed as a real application.</h2>
+        </div>
+        <div class="case-copy">
+          <p>The project includes separate frontend and server test suites, a production build and type-check workflow, and GitHub Actions continuous integration. The hosted frontend and API are deployed on Vercel, with TiDB Cloud Serverless providing the authenticated workspace database.</p>
+          <p>Operational checks include API health and database-readiness endpoints. The project documentation also records important boundaries: the current rate limiter is process-local, so a shared store is needed before scaling across multiple application instances.</p>
+          <p class="case-small-note">Launchboard is a personal learning and portfolio project. It is not presented as a security-certified or production-scale commercial service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-outro">
+      <div class="case-container">
+        <p class="eyebrow eyebrow-light">Explore the project</p>
+        <h2>See Launchboard in action.</h2>
+        <p>Try the live application or return to the portfolio to explore the other projects.</p>
+        <div class="case-hero-actions">
+          <a class="btn btn-primary" href="https://launchboard-drab.vercel.app" target="_blank" rel="noopener noreferrer">Open live application <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost btn-ghost-light" href="index.html#projects">Back to portfolio</a>
+        </div>
+        <p class="case-private-note">The Launchboard source repository is currently private.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="case-footer">
+    <div class="case-container"><span>© 2026 Youssef Mohamed</span><a href="index.html#home">Back to portfolio ↑</a></div>
+  </footer>
+</body>
+</html>

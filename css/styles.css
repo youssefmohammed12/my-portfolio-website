@@ -505,7 +505,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
    ============================================================ */
 .compare-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.4rem;
   margin-bottom: 4.5rem;
 }
@@ -526,7 +526,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   inset: 0 auto 0 0;
   width: 4px;
 }
-.compare-hb::before { background: var(--accent); }
+.compare-launchboard::before { background: var(--accent); }
+.compare-hb::before { background: var(--sky); }
 .compare-fl::before { background: var(--coral); }
 .compare-nova::before { background: #a94f2c; }
 .compare-head { display: flex; align-items: baseline; gap: .8rem; margin-bottom: .35rem; }
@@ -538,6 +539,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 .compare-name { font-family: var(--font-head); font-weight: 800; font-size: 1.35rem; margin: 0; color: var(--ink); }
 .compare-focus { font-weight: 600; color: var(--accent-dark); margin-bottom: 1rem; }
+.compare-launchboard .compare-focus { color: var(--accent-dark); }
 .compare-fl .compare-focus { color: var(--coral-dark); }
 .compare-nova .compare-focus { color: #8a3e20; }
 .compare-list { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem .9rem; }
@@ -556,7 +558,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   height: 6px;
   border-radius: 50%;
 }
-.compare-hb .compare-list li::before { background: var(--accent); }
+.compare-launchboard .compare-list li::before { background: var(--accent); }
+.compare-hb .compare-list li::before { background: var(--sky); }
 .compare-fl .compare-list li::before { background: var(--coral); }
 .compare-nova .compare-list li::before { background: #a94f2c; }
 
@@ -793,7 +796,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
    ============================================================ */
 .certificates-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.4rem;
 }
 .certificate-card {
@@ -808,6 +811,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 .certificate-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: #c7dedb; }
 .certificate-card-nti { border-top: 4px solid var(--coral); }
+.certificate-card-data { border-top: 4px solid var(--sky); }
+.certificate-card-data .certificate-kicker { color: var(--sky); }
 .certificate-card-google { border-top: 4px solid var(--accent); }
 .certificate-preview {
   display: block;
@@ -851,9 +856,15 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 .certificate-meta { color: var(--muted); font-size: .9rem; }
 .certificate-score { background: var(--coral-soft); border-color: #ffc8be; color: var(--coral-dark); }
-.certificate-body > .btn { margin-top: auto; }
-.certificate-actions { margin-top: auto; padding-top: 1.25rem; }
-.certificate-actions { margin-bottom: 0; }
+.certificate-hours { margin-top: .75rem; font-size: .84rem; }
+.certificate-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin: auto 0 0;
+  padding-top: 1.25rem;
+}
 
 /* ============================================================
    SERVICES
@@ -1027,8 +1038,10 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   box-shadow: 0 0 0 3px rgba(13, 148, 136, .15);
 }
 .form-status { font-size: .9rem; font-weight: 600; margin: .9rem 0 0; min-height: 1.2em; }
+.form-status.pending { color: #475569; }
 .form-status.ok { color: var(--accent-dark); }
 .form-status.err { color: var(--coral-dark); }
+.contact-form button:disabled { opacity: .72; cursor: wait; }
 .form-note { font-size: .8rem; color: var(--muted); margin: .7rem 0 0; }
 
 /* ============================================================
@@ -1163,6 +1176,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
+  .certificates-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-grid { gap: 2.4rem; padding: 64px 0 80px; }
   .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1171,9 +1185,14 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 900px) {
+/* The full navigation needs more room than a narrow tablet provides. Keep the
+   desktop content layout, but switch the header to its compact menu earlier. */
+@media (max-width: 1159px) {
   .main-nav, .nav-actions .icon-btn, .nav-cta { display: none; }
   .nav-toggle { display: flex; }
+}
+
+@media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { max-width: 560px; margin-inline: auto; width: 100%; }
   .hero-id-card { left: 0; }
