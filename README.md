@@ -78,7 +78,7 @@ Expected graduation: 2028
 
 ## Contact
 
-The portfolio contact form is connected to Web3Forms and submits directly from the browser. It does not require a separate backend or database. The visitor-provided subject is used as the notification email subject and is also mirrored in the `project_subject` field so it appears in the email body. The Web3Forms access key is intentionally public and is stored in the form markup; do not place private credentials in frontend files.
+The portfolio contact form is connected to Web3Forms and submits directly from the browser. It does not require a separate backend or database. The visitor-provided subject is used as the notification email subject and is also prepended to the message body so it remains visible in the notification email. The Web3Forms access key is intentionally public and is stored in the form markup; do not place private credentials in frontend files.
 
 - GitHub: [github.com/youssefmohammed12](https://github.com/youssefmohammed12)
 - LinkedIn: [linkedin.com/in/youssef1g-mohamed](https://www.linkedin.com/in/youssef1g-mohamed)
