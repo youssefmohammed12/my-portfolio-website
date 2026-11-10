@@ -111,7 +111,10 @@
         var payload = Object.fromEntries(new FormData(form).entries());
         var subjectValue = String(payload.subject || "").trim();
         var messageValue = String(payload.message || "").trim();
-        payload.message = "Project subject: " + subjectValue + "\n\n" + messageValue;
+        var budgetValue = String(payload.budget_timeline || "").trim();
+        payload.message = "Project subject: " + subjectValue +
+          (budgetValue ? "\nBudget / timeline: " + budgetValue : "") +
+          "\n\n" + messageValue;
         var response = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           headers: {

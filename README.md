@@ -28,8 +28,8 @@ A personal workspace for tracking jobs, internships, and freelance opportunities
 - **Technologies:** React 18, TypeScript, Vite 6, Tailwind CSS v4, Node.js, Express 5, Zod, TiDB Cloud Serverless, MySQL-compatible SQL, Vitest, GitHub Actions, Vercel
 - **Highlights:** Opportunity dashboard and list/board pipeline, contacts, interview rounds, application-material metadata, activity history, calendar, deadlines, reports, CSV import/export, JSON backup/restore, and separate browser-only and authenticated API workspaces.
 - **Engineering:** Shared TypeScript domain package, account authentication and recovery, database-backed sessions, CSRF protection, automated frontend/server tests, and CI builds.
-- **Live app:** [launchboard-drab.vercel.app](https://launchboard-drab.vercel.app)
-- **Repository:** Private for now.
+- **Live app:** Sign-in required; no public demo account is available yet. Use the [case study](launchboard-case-study.html) and screenshots for a review-safe walkthrough.
+- **Repository:** [github.com/youssefmohammed12/Launchboard](https://github.com/youssefmohammed12/Launchboard) (public).
 
 Launchboard is a personal opportunity tracker, not a job board or freelancing marketplace. The local browser workspace and authenticated API workspace are separate and do not synchronize automatically.
 
