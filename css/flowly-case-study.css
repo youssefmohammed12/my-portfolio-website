@@ -1,3 +1,8 @@
+/* Keep this case study's teal text and filled controls above WCAG AA contrast. */
+body.case-study-page {
+  --accent: #0f766e;
+}
+
 /* Flowly-specific refinements for the shared screenshot system. */
 .case-mobile-showcase .g-item-featured img {
   width: min(100%, 260px);

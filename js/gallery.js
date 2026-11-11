@@ -101,7 +101,7 @@
       item.setAttribute("tabindex", "0");
       item.setAttribute("role", "button");
       item.setAttribute("aria-haspopup", "dialog");
-      if (!item.hasAttribute("aria-label")) {
+      if (!item.hasAttribute("aria-label") && !item.querySelector("figcaption")) {
         var img = item.querySelector("img");
         item.setAttribute("aria-label", "View screenshot: " + (img ? img.alt : "project image"));
       }
