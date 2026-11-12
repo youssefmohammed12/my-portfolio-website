@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA Home — Full-Stack E-Commerce Case Study | Youssef Mohamed</title>
+  <meta name="description" content="A full-stack Egyptian-market furniture storefront built with PHP, MySQL, vanilla JavaScript, customer workflows, an admin portal, security controls, and automated deployment.">
+  <meta name="author" content="Youssef Mohamed">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://youssefmohammed12.github.io/my-portfolio-website/nova-case-study.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://youssefmohammed12.github.io/my-portfolio-website/nova-case-study.html">
+  <meta property="og:title" content="NOVA Home — Full-Stack E-Commerce Case Study">
+  <meta property="og:description" content="From responsive product discovery to authenticated Cash on Delivery checkout and a secure admin portal — an end-to-end PHP/MySQL commerce project.">
+  <meta property="og:image" content="https://youssefmohammed12.github.io/my-portfolio-website/assets/nova/homepage-desktop.png">
+  <meta property="og:image:alt" content="NOVA Home desktop storefront homepage">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NOVA Home — Full-Stack E-Commerce Case Study">
+  <meta name="twitter:description" content="A PHP and MySQL commerce project covering storefront, checkout, customer accounts, administration, security, QA, and deployment.">
+  <meta name="twitter:image" content="https://youssefmohammed12.github.io/my-portfolio-website/assets/nova/homepage-desktop.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="stylesheet" href="css/nova-case-study.css">
+</head>
+<body class="case-study-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="case-header"><div class="case-container case-nav">
+    <a href="index.html#home" class="logo" aria-label="Youssef Mohamed — home"><span class="logo-mark" aria-hidden="true">YM</span><span class="logo-text">Youssef <strong>Mohamed</strong></span></a>
+    <div class="case-nav-actions"><a class="btn btn-ghost btn-sm" href="index.html#projects">Back to portfolio</a><a class="btn btn-primary btn-sm" href="https://nova-home.fast-page.org/" target="_blank" rel="noopener noreferrer">Open live NOVA demo <span aria-hidden="true">↗</span></a></div>
+  </div></header>
+  <main id="main">
+    <section class="case-hero"><div class="case-container">
+      <p class="eyebrow eyebrow-light">Project case study · 04</p><p class="case-overline">Full-stack engineering / Commerce platform</p><h1>NOVA Home<span>.</span></h1>
+      <p class="case-hero-lead">A furniture and home-decor commerce experience for the Egyptian market — built from product discovery through customer accounts, Cash on Delivery checkout, administration, and production deployment.</p>
+      <div class="case-hero-actions"><a class="btn btn-primary" href="https://nova-home.fast-page.org/" target="_blank" rel="noopener noreferrer">Explore the live storefront <span aria-hidden="true">↗</span></a><a class="btn btn-ghost btn-ghost-light" href="https://github.com/youssefmohammed12/Nova" target="_blank" rel="noopener noreferrer">View source repository <span aria-hidden="true">↗</span></a></div>
+      <figure class="case-hero-shot"><img src="assets/nova/homepage-desktop.png" alt="NOVA Home desktop homepage showing the furniture and home-decor storefront" width="1440" height="900"><figcaption>Desktop storefront · latest curated homepage capture from the NOVA interface gallery</figcaption></figure>
+    </div></section>
+    <section class="case-facts" aria-label="Project summary"><div class="case-container case-facts-grid">
+      <div><span>Project</span><strong>Full-stack commerce platform</strong></div><div><span>Backend</span><strong>PHP · PDO · MySQL</strong></div><div><span>Frontend</span><strong>HTML · CSS · JavaScript</strong></div><div><span>Deployment</span><strong>InfinityFree · GitHub Actions</strong></div>
+    </div></section>
+    <section class="case-section" id="overview"><div class="case-container case-two-col">
+      <div class="case-section-intro"><p class="eyebrow">01 / The project</p><h2>Connect a product-led storefront to the workflows behind it.</h2></div>
+      <div class="case-copy"><p>NOVA Home is a full-stack furniture and home-decor storefront designed around an Egyptian-market catalogue and Cash on Delivery fulfilment. Customers can discover products and manage their orders, while administrators maintain the catalogue, process orders, and configure store settings.</p>
+        <p>The engineering challenge was to make the experience feel like one coherent product without treating the storefront, customer account, database, and administration tools as unrelated pages. Product information, cart state, delivery settings, and order handling need to stay consistent across the journey.</p>
+        <div class="case-callout nova-callout"><strong>Project boundary</strong><span>NOVA Home is a portfolio demonstration, not a live commercial retailer. Its sample data is synthetic, shared, and mutable. The implementation supports Cash on Delivery only and does not include an online payment gateway.</span></div>
+      </div>
+    </div></section>
+    <section class="case-section case-section-alt"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">02 / Customer experience</p><h2>Make product discovery and checkout feel like one journey.</h2><p>The customer-facing work focuses on useful discovery, clear product information, and predictable shopping state.</p></div>
+      <div class="case-feature-grid">
+        <article class="case-feature"><span>01</span><h3>Discover the catalogue</h3><p>Search, category navigation, filtering, sorting, and consistent result matching help customers move from a broad product idea to relevant items.</p></article>
+        <article class="case-feature"><span>02</span><h3>Inspect products</h3><p>Product details combine an image gallery, specifications, pricing, and delivery information. Quick View provides a faster route back to browsing.</p></article>
+        <article class="case-feature"><span>03</span><h3>Keep shopping state</h3><p>The cart retains item quantities and recalculates displayed totals. The wishlist is deliberately browser-local and disclosed as device-specific.</p></article>
+        <article class="case-feature"><span>04</span><h3>Place a COD order</h3><p>Checkout is available to authenticated customers. The server re-reads current product and delivery data, validates the request, and recalculates the order before saving.</p></article>
+      </div>
+    </div></section>
+    <section class="case-section"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">03 / Store administration</p><h2>Give the store owner a separate, focused workspace.</h2><p>The administrator portal handles routine catalogue and order operations separately from the customer storefront.</p></div>
+      <div class="case-decision-grid">
+        <article><h3>Store overview</h3><p>A dashboard brings store activity, orders, and operational shortcuts into one starting point.</p></article>
+        <article><h3>Catalogue management</h3><p>Administrators can create and edit products, maintain categories, manage product visibility, and update product information.</p></article>
+        <article><h3>Order workflow</h3><p>Orders can be reviewed and moved through the supported fulfilment statuses from the administration area.</p></article>
+        <article><h3>Store settings</h3><p>Store identity and delivery settings are maintained from a dedicated settings surface.</p></article>
+        <article><h3>Role separation</h3><p>Customer and administrator routes use separate session-backed access checks and distinct portal navigation.</p></article>
+        <article><h3>Accessible forms</h3><p>Product repeaters and icon-only category actions include explicit accessible names and retain existing confirmation safeguards.</p></article>
+      </div>
+    </div></section>
+    <section class="case-section case-section-alt" id="implementation"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">04 / Implementation</p><h2>A browser-native frontend with a structured PHP backend.</h2><p>The frontend stays lightweight while server-side logic handles important commerce and access-control decisions.</p></div>
+      <div class="case-decision-grid">
+        <article><h3>PHP application layer</h3><p>Server-rendered customer and admin pages share reusable bootstrap, validation, session, and utility code. JSON endpoints serve storefront data requests.</p></article>
+        <article><h3>Relational data</h3><p>PDO prepared statements connect PHP to MariaDB / MySQL. The server remains authoritative for product prices, delivery configuration, and order creation.</p></article>
+        <article><h3>Semantic frontend</h3><p>Semantic HTML, custom CSS, and Vanilla JavaScript build the storefront and interaction layer. Bootstrap supplies selected UI utilities and Swiper supports sliders.</p></article>
+        <article><h3>Security controls</h3><p>Session-backed access control, server-side input validation, CSRF tokens, prepared SQL, password hashing, and protected application directories support account and admin workflows.</p></article>
+        <article><h3>Responsive design</h3><p>The interface covers desktop and mobile, including a responsive filter drawer, product-card hierarchy, and a mobile account-navigation grid.</p></article>
+        <article><h3>Repeatable delivery</h3><p>GitHub Actions deploys selected runtime files to InfinityFree over explicit FTPS. The workflow includes a dry-run option and repository-level deployment gate.</p></article>
+      </div>
+    </div></section>
+    <section class="case-section"><div class="case-container case-two-col">
+      <div class="case-section-intro"><p class="eyebrow">05 / Refinement and QA</p><h2>Finish the small details that make the whole flow consistent.</h2></div>
+      <div class="case-copy">
+        <p>The final refinement pass went beyond the first implementation. I improved the mobile filter drawer, product and cart interactions, checkout guidance, customer navigation, and admin form labelling. Header autocomplete and full shop results now use consistent matching, including plural search terms such as “Lamps” and “Vases”.</p>
+        <p>Accessibility work included clearer control names, keyboard and focus behavior, reduced-motion handling, visible form feedback, responsive touch targets, and semantic status messaging. These changes were paired with focused UI regression tests instead of relying on screenshots alone.</p>
+        <p>The final project closeout recorded <strong>847 passing checks across 14 focused test suites</strong>, covering syntax, release-readiness, storefront interactions, product details, cart and checkout, wishlist, customer messaging, search, visual consistency, responsive states, and admin accessibility.</p>
+        <p class="case-small-note">These are project-specific automated checks, not a formal accessibility certification or a published Lighthouse / Core Web Vitals score.</p>
+      </div>
+    </div></section>
+    <section class="case-section case-section-alt"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">06 / Interface gallery</p><h2>One project, from storefront to administration.</h2><p>Recent local captures from the completed NOVA interface, including desktop and mobile customer experiences and the administrator portal.</p></div>
+      <h3 class="gallery-subheading">Storefront and product discovery</h3>
+      <div class="case-gallery case-gallery-landscape" data-gallery="nova-storefront">
+        <figure class="g-item"><img src="assets/nova/homepage-desktop.png" alt="NOVA Home desktop homepage and furniture storefront" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Desktop homepage</strong><span>Storefront introduction and product-led layout</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/nova/homepage-mobile.png" alt="NOVA Home mobile homepage at a 390 pixel viewport" width="390" height="844" loading="lazy" decoding="async"><figcaption><strong>Mobile homepage</strong><span>Responsive storefront at phone width</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/nova/shop-desktop.png" alt="NOVA Home catalogue with category filters, sorting and product cards" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Shop catalogue</strong><span>Product discovery, filters and sorting</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/nova/product-detail.png" alt="NOVA Home product details with gallery, price, specifications and delivery information" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Product details</strong><span>Product imagery, information and shopping actions</span></figcaption></figure>
+      </div>
+      <h3 class="gallery-subheading">Shopping and account</h3>
+      <div class="case-gallery case-gallery-landscape" data-gallery="nova-customer-workflows">
+        <figure class="g-item"><img src="assets/nova/cart.png" alt="NOVA Home cart and order summary" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Shopping cart</strong><span>Line items, quantities and order summary</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/nova/checkout.png" alt="NOVA Home Cash on Delivery checkout form and order summary" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Checkout</strong><span>Customer details, delivery address and COD payment</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/nova/customer-dashboard.png" alt="NOVA Home customer dashboard showing account and order information" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Customer dashboard</strong><span>Account and order overview</span></figcaption></figure>
+      </div>
+      <h3 class="gallery-subheading">Administration</h3>
+      <div class="case-gallery case-gallery-landscape" data-gallery="nova-administration">
+        <figure class="g-item"><img src="assets/nova/admin-dashboard.png" alt="NOVA Home administrator dashboard with store metrics and management shortcuts" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Admin dashboard</strong><span>Store overview and management entry points</span></figcaption></figure>
+      </div>
+    </div></section>
+    <section class="case-section"><div class="case-container case-two-col">
+      <div class="case-section-intro"><p class="eyebrow">07 / Product boundaries</p><h2>Make the demo useful without overstating what it does.</h2></div>
+      <div class="case-copy"><p>NOVA is an interactive project demonstration. The sample catalogue and account data are shared and mutable, so visitors should use only the provided demo flows and never enter real personal or payment information.</p>
+        <div class="case-callout nova-callout"><strong>What the project does not claim</strong><span>There is no online payment gateway, tracked stock quantity, or implemented review system. Checkout is Cash on Delivery only. Wishlist data stays in the visitor's browser and is not synchronized to an account.</span></div>
+        <p>Those boundaries are intentional: the case study documents the implemented customer, admin, and deployment workflows rather than suggesting that a portfolio demo is a fully operated retail business.</p>
+      </div>
+    </div></section>
+    <section class="case-outro"><div class="case-container">
+      <p class="eyebrow eyebrow-light">Explore the project</p><h2>Try the storefront and the two portal entry points.</h2><p>The interactive demo uses synthetic shared data. Use the demo-entry options on the sign-in pages and avoid submitting real personal details.</p>
+      <div class="case-hero-actions">
+        <a class="btn btn-primary" href="https://nova-home.fast-page.org/" target="_blank" rel="noopener noreferrer">Open storefront <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-ghost-light" href="https://nova-home.fast-page.org/account/login.php" target="_blank" rel="noopener noreferrer">Customer demo entry <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-ghost-light" href="https://nova-home.fast-page.org/admin/login.php" target="_blank" rel="noopener noreferrer">Admin demo entry <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-ghost-light" href="https://github.com/youssefmohammed12/Nova" target="_blank" rel="noopener noreferrer">Source repository <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-ghost-light" href="index.html#projects">Back to portfolio</a>
+      </div>
+      <p class="case-private-note">NOVA Home is a portfolio demonstration using shared synthetic data. Cash on Delivery is the only checkout method, and the wishlist is browser-local.</p>
+    </div></section>
+  </main>
+  <footer class="case-footer"><div class="case-container"><span>© 2026 Youssef Mohamed</span><a href="index.html#home">Back to portfolio ↑</a></div></footer>
+  <script src="js/gallery.js?v=20261104-gallery-system" defer></script>
+</body>
+</html>

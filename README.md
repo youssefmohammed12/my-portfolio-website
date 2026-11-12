@@ -51,23 +51,28 @@ A fictional team and project-management SaaS concept built as a professional fro
 - **Live demo:** [youssefmohammed12.github.io/Flowly](https://youssefmohammed12.github.io/Flowly/)
 - **Repository:** [github.com/youssefmohammed12/Flowly](https://github.com/youssefmohammed12/Flowly)
 
-### NOVA Home
+### NOVA Home — [Read the full case study](nova-case-study.html)
 
-A full-stack furniture and home-decor e-commerce website for the Egyptian market, with product discovery, customer accounts, Cash on Delivery checkout, and an administrator portal.
+A full-stack furniture and home-decor commerce platform for the Egyptian market, combining a responsive customer storefront, authenticated shopping workflows, a PHP/MySQL backend, and a separate administrator portal.
 
-- **Technologies:** PHP 8.1+, MariaDB / MySQL, PDO, HTML5, hand-written CSS, Vanilla ES2020+ JavaScript, Bootstrap 5.3.8, Swiper 14.3.0, Playwright
-- **Highlights:** Search and filtering, product details, Quick View, wishlist, shopping cart, Cash on Delivery checkout, customer accounts and order history, product and category management, order-status workflow, store settings, session-based access control, CSRF protection, and prepared statements.
-- **Customer demo:** [nova-home.fast-page.org/account/login.php](https://nova-home.fast-page.org/account/login.php)
-- **Admin demo:** [nova-home.fast-page.org/admin/login.php](https://nova-home.fast-page.org/admin/login.php)
+- **Technologies:** PHP 8.1+, MariaDB / MySQL, PDO, semantic HTML5, custom CSS, Vanilla JavaScript ES2020+, Bootstrap 5.3.8, Swiper 14.3.0, Node.js, Playwright, GitHub Actions, and FTPS deployment.
+- **Customer experience:** Product search and category discovery, filters and sorting, product galleries, Quick View, browser-local wishlist, cart, customer accounts, address book, order history, and authenticated Cash on Delivery checkout.
+- **Administration:** Store overview, product and category management, order-status workflow, and store settings.
+- **Engineering:** Session-backed access control, server-side validation, CSRF protection, PDO prepared statements, responsive and accessible interaction patterns, and focused automated regression checks.
+- **Quality and delivery:** Final project closeout recorded 847 passing checks across 14 focused suites. Production files are deployed to InfinityFree through a GitHub Actions workflow using explicit FTPS.
+- **Live storefront:** [nova-home.fast-page.org](https://nova-home.fast-page.org/)
+- **Customer sign-in / demo entry:** [Customer portal](https://nova-home.fast-page.org/account/login.php)
+- **Administrator sign-in / demo entry:** [Admin portal](https://nova-home.fast-page.org/admin/login.php)
 - **Repository:** [github.com/youssefmohammed12/Nova](https://github.com/youssefmohammed12/Nova)
 
-NOVA Home is a portfolio demonstration. Its interactive demos use shared, mutable demonstration data, and checkout supports Cash on Delivery only.
+NOVA Home is an interactive portfolio demonstration, not a commercial store. Demo data is synthetic, shared, and mutable. Checkout supports Cash on Delivery only; the wishlist is stored locally in the visitor's browser. There is no online payment gateway, tracked stock quantity, or implemented review system. Visitors should not enter real personal or payment information.
 
 ## Portfolio implementation
 
 - Static HTML, CSS, and JavaScript hosted on GitHub Pages.
 - `launchboard-case-study.html` documents the Launchboard product workflow and architecture.
 - `flowly-case-study.html` documents the Flowly frontend concept, design decisions, interactions, and QA.
+- `nova-case-study.html` documents the NOVA Home commerce workflows, architecture, security, visual refinements, deployment, and refreshed screenshots.
 - `robots.txt` and `sitemap.xml` provide basic search-engine discovery metadata.
 - The contact form uses the Web3Forms browser-side API; its access key is public by design.
 
