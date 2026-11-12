@@ -1,7 +1,20 @@
-/* Keep this case study's teal text and filled controls above WCAG AA contrast. */
+/* Match Flowly's published brick-red identity while keeping accessible contrast. */
 body.case-study-page {
-  --accent: #0f766e;
+  --accent: #b83d31;
+  --accent-dark: #a83229;
+  --accent-soft: #fff0ed;
 }
+
+body.case-study-page .case-hero {
+  background: radial-gradient(900px 420px at 85% 0%, rgba(184, 61, 49, .2), transparent 62%), var(--navy);
+}
+body.case-study-page .case-hero h1 span { color: #ff6b5a; }
+body.case-study-page .case-callout { background: #fff0ed; border-left-color: var(--accent); }
+body.case-study-page .case-callout strong { color: var(--accent-dark); }
+body.case-study-page .case-outro {
+  background: radial-gradient(650px 320px at 90% 0%, rgba(184, 61, 49, .17), transparent 62%), var(--navy);
+}
+body.case-study-page .case-footer a { color: #ffd7d2; }
 
 /* Flowly-specific refinements for the shared screenshot system. */
 .case-mobile-showcase .g-item-featured img {
