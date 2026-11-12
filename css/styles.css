@@ -607,7 +607,19 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 }
 #project-flowly .project-cat { color: var(--coral-dark); background: var(--coral-soft); }
 #project-nova-home .project-cat { color: #8a3e20; background: #f5e4dc; }
-.project-links { display: flex; gap: .6rem; flex-wrap: wrap; }
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  flex-wrap: wrap;
+}
+.project-links .btn {
+  min-width: 9rem;
+  min-height: 2.65rem;
+  padding: .6rem 1.05rem;
+  justify-content: center;
+}
+.project-links .btn svg { flex: 0 0 auto; }
 
 .project-desc { font-size: 1.08rem; color: #33415a; max-width: 56rem; }
 
