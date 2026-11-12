@@ -1,0 +1,11 @@
+/* NOVA case-study accents echo the storefront's warm terracotta identity. */
+body.case-study-page { --accent: #a65d43; }
+.nova-callout { background: #fff4ef; border-left-color: #a65d43; }
+.nova-callout strong { color: #84442f; }
+.case-hero h1 span { color: #e6ad91; }
+.case-outro {
+  background: radial-gradient(650px 320px at 90% 0%, rgba(180,111,82,.2), transparent 62%), var(--navy);
+}
+@media (max-width: 640px) {
+  .case-hero-actions .btn { width: 100%; justify-content: center; }
+}
