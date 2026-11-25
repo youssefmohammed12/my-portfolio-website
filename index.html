@@ -428,9 +428,12 @@
               <p class="project-cat">Full-Stack Web Application</p>
             </div>
             <div class="project-links" aria-label="HealthBridge project actions">
-              <a class="btn btn-primary btn-sm btn-healthbridge" href="https://youssefhealthbridge.freehosting.dev/" target="_blank" rel="noopener noreferrer" aria-label="Open the HealthBridge live demo in a new tab">
+              <a class="btn btn-primary btn-sm btn-healthbridge" href="https://youssef1.alwaysdata.net/" target="_blank" rel="noopener noreferrer" aria-label="Open the HealthBridge live demo in a new tab">
                 Live Demo
                 <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+              </a>
+              <a class="btn btn-ghost btn-sm" href="healthbridge-case-study.html" aria-label="Read the HealthBridge case study">Case Study
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v18H6.5A2.5 2.5 0 0 0 4 22z"/><path d="M4 4.5v17.5M8 6h8M8 10h8"/></svg>
               </a>
               <a class="btn btn-ghost btn-sm" href="https://github.com/youssefmohammed12/hospital-project" target="_blank" rel="noopener noreferrer" aria-label="Open the HealthBridge GitHub repository in a new tab">
                 GitHub
@@ -439,7 +442,7 @@
             </div>
           </header>
 
-          <p class="project-desc">HealthBridge is a comprehensive hospital management and patient portal platform designed to connect patients, doctors, and administrators through a unified healthcare management system.</p>
+          <p class="project-desc">HealthBridge is a full-stack hospital management platform that connects patients, doctors, and administrators in one system — a public site with a live doctor directory, email-verified registration, three role-based dashboards, and background workers that process sign-ups and deliver email. Built with PHP and MariaDB, redesigned end to end in 2026, and running live on a fictional demo dataset.</p>
 
           <ul class="tech-row" aria-label="HealthBridge technology stack">
             <li>PHP 8+</li><li>MySQL / MariaDB</li><li>JavaScript ES6+</li><li>HTML5</li><li>CSS3</li><li>PDO</li><li>REST-style JSON APIs</li><li>Composer</li><li>Git</li>
@@ -449,12 +452,12 @@
             <div class="feature-col">
               <h4><span class="feature-dot feature-dot-teal" aria-hidden="true"></span>Patient Portal</h4>
               <ul>
-                <li>Health dashboard &amp; vitals</li>
+                <li>Dashboard &amp; next appointment</li>
                 <li>Appointments &amp; rescheduling</li>
-                <li>Four-step booking wizard</li>
-                <li>Electronic Medical Records</li>
-                <li>Medical history timeline</li>
-                <li>Prescription tracking</li>
+                <li>Guided booking wizard</li>
+                <li>Prescriptions &amp; medication tracker</li>
+                <li>Medical records &amp; printouts</li>
+                <li>Printable visit summaries</li>
                 <li>Notifications &amp; settings</li>
               </ul>
             </div>
@@ -466,7 +469,7 @@
                 <li>Clinical encounters</li>
                 <li>SOAP-style notes</li>
                 <li>Digital prescriptions</li>
-                <li>Reschedule negotiation</li>
+                <li>Reschedule requests</li>
                 <li>Ratings &amp; reviews</li>
               </ul>
             </div>
@@ -488,8 +491,8 @@
               <h4>Backend</h4>
               <ul>
                 <li>Object-oriented PHP with a service-layer architecture</li>
-                <li>Reusable business logic &amp; REST-style JSON endpoints</li>
-                <li>Server-side validation &amp; PDO database access</li>
+                <li>REST-style JSON endpoints &amp; reusable business logic</li>
+                <li>Background workers for sign-ups and email delivery</li>
               </ul>
             </div>
             <div class="highlight-card">
@@ -497,7 +500,7 @@
               <ul>
                 <li>Session-based authentication &amp; role-based access control</li>
                 <li>Prepared statements, input validation &amp; secure output</li>
-                <li>Permission handling &amp; audit logging</li>
+                <li>Email-verified registration &amp; audit logging</li>
               </ul>
             </div>
             <div class="highlight-card">
@@ -536,54 +539,50 @@
           <div class="gallery-wrap">
             <p class="gallery-title">Interface gallery <span>— click any screenshot to enlarge</span></p>
             <div class="gallery" data-gallery="healthbridge">
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge landing page">
-                <img src="assets/01_landing_page.png" alt="HealthBridge public landing page with doctor search" loading="lazy" decoding="async">
-                <figcaption>Landing page</figcaption>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge home page">
+                <img src="assets/healthbridge/home.png" alt="HealthBridge home page with doctor search and the three role journeys" loading="lazy" decoding="async">
+                <figcaption>Home page</figcaption>
               </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge role-based login">
-                <img src="assets/02_login_page.png" alt="HealthBridge sign-in page with Admin, Patient and Doctor quick demo roles" loading="lazy" decoding="async">
-                <figcaption>Role-based login</figcaption>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge doctor directory">
+                <img src="assets/healthbridge/doctors.png" alt="HealthBridge doctor directory with departments and sample specialist profiles" loading="lazy" decoding="async">
+                <figcaption>Doctor directory</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge capabilities page">
+                <img src="assets/healthbridge/services.png" alt="HealthBridge capabilities page showing how patients, doctors and admins connect in one system" loading="lazy" decoding="async">
+                <figcaption>Capabilities</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge about page">
+                <img src="assets/healthbridge/about.png" alt="HealthBridge about page telling the project's build story" loading="lazy" decoding="async">
+                <figcaption>About the project</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge feedback page">
+                <img src="assets/healthbridge/contact.png" alt="HealthBridge feedback page for comments about the demonstration" loading="lazy" decoding="async">
+                <figcaption>Project feedback</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge sign-in page">
+                <img src="assets/healthbridge/login.png" alt="HealthBridge sign-in page with one-click demo access for patient, doctor and admin" loading="lazy" decoding="async">
+                <figcaption>Sign-in &amp; demo access</figcaption>
+              </figure>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge registration page">
+                <img src="assets/healthbridge/register.png" alt="HealthBridge three-step patient registration with a live profile preview" loading="lazy" decoding="async">
+                <figcaption>Patient registration</figcaption>
               </figure>
               <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge patient dashboard">
-                <img src="assets/03_patient_dashboard.png" alt="HealthBridge patient dashboard with next appointment, health alerts and snapshot stats" loading="lazy" decoding="async">
+                <img src="assets/healthbridge/patient-dashboard.png" alt="HealthBridge patient dashboard with next appointment and profile completeness" loading="lazy" decoding="async">
                 <figcaption>Patient dashboard</figcaption>
               </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge booking wizard">
-                <img src="assets/04_patient_booking_wizard.png" alt="HealthBridge four-step appointment booking wizard at the confirmation step" loading="lazy" decoding="async">
-                <figcaption>Booking wizard</figcaption>
-              </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge appointments">
-                <img src="assets/05_patient_appointments.png" alt="HealthBridge patient appointments list with status filters and reschedule actions" loading="lazy" decoding="async">
-                <figcaption>Appointments</figcaption>
-              </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge prescriptions">
-                <img src="assets/06_patient_prescriptions.png" alt="HealthBridge prescriptions view with medications and PDF download" loading="lazy" decoding="async">
-                <figcaption>Prescriptions</figcaption>
-              </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge medical history">
-                <img src="assets/07_patient_medical_history.png" alt="HealthBridge medical history and timeline with diagnoses and events" loading="lazy" decoding="async">
-                <figcaption>Medical history</figcaption>
-              </figure>
               <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge doctor dashboard">
-                <img src="assets/08_doctor_dashboard.png" alt="HealthBridge doctor dashboard with patient queue and today's visits" loading="lazy" decoding="async">
+                <img src="assets/healthbridge/doctor-dashboard.png" alt="HealthBridge doctor dashboard with today's schedule and patient queue summary" loading="lazy" decoding="async">
                 <figcaption>Doctor dashboard</figcaption>
               </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge clinical workspace">
-                <img src="assets/09_doctor_workspace.png" alt="HealthBridge clinical workspace with patient vitals, visit state and tabs" loading="lazy" decoding="async">
-                <figcaption>Clinical workspace</figcaption>
-              </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge admin analytics">
-                <img src="assets/10_admin_dashboard.png" alt="HealthBridge admin analytics dashboard with KPIs and appointment charts" loading="lazy" decoding="async">
-                <figcaption>Admin analytics</figcaption>
-              </figure>
-              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge doctor management">
-                <img src="assets/11_admin_doctor_management.png" alt="HealthBridge admin doctor management view with profile and audit tabs" loading="lazy" decoding="async">
-                <figcaption>Doctor management</figcaption>
+              <figure class="g-item" tabindex="0" role="button" aria-label="Enlarge: HealthBridge admin overview">
+                <img src="assets/healthbridge/admin-overview.png" alt="HealthBridge admin overview with hospital totals and an appointment status chart" loading="lazy" decoding="async">
+                <figcaption>Admin overview</figcaption>
               </figure>
             </div>
           </div>
 
-          <p class="project-note">HealthBridge is a personal portfolio project demonstrating full-stack development, a complete multi-role platform, not a commercial product. For the live demo, open the sign-in page and use its Quick Login options to explore the Patient, Doctor, and Administrator roles. The public repository is named <a href="https://github.com/youssefmohammed12/hospital-project" target="_blank" rel="noopener noreferrer">hospital-project</a>.</p>
+          <p class="project-note">HealthBridge is a personal portfolio project — a complete multi-role platform, not a commercial product or a real healthcare service. It runs live on a fictional dataset (45 doctors, 500 patients). To explore it, open the live demo, go to Sign in, and use the Demo Access buttons to enter as a Patient, Doctor, or Administrator — no sign-up needed. The public repository is named <a href="https://github.com/youssefmohammed12/hospital-project" target="_blank" rel="noopener noreferrer">hospital-project</a>.</p>
         </article>
 
         <article class="project reveal" id="project-flowly" aria-labelledby="fl-title">

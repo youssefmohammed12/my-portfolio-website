@@ -1,0 +1,20 @@
+/* HealthBridge case-study accents echo the platform's deep green, teal and brass identity. */
+body.case-study-page { --accent: #17645f; --accent-dark: #102b2b; }
+.healthbridge-callout { background: #f3f1e7; border-left-color: #b89563; }
+.healthbridge-callout strong { color: #76552f; }
+.case-hero { background: radial-gradient(900px 420px at 85% 0%, rgba(184, 149, 99, .20), transparent 62%), var(--navy); }
+.case-hero h1 span { color: #d9bf96; }
+.case-outro {
+  background: radial-gradient(650px 320px at 90% 0%, rgba(184, 149, 99, .18), transparent 62%), var(--navy);
+}
+@media (max-width: 640px) {
+  .case-hero-actions .btn { width: 100%; justify-content: center; }
+}
+
+/* Motion extras — the generic case-study polish lives in case-study.css;
+   these are HealthBridge's brass touches on top of it. */
+@media (prefers-reduced-motion: no-preference) {
+  .case-feature:hover, .case-decision-grid article:hover { border-color: rgba(184, 149, 99, .55); }
+  .case-gallery .g-item:hover { border-color: #b89563; }
+  .case-hero-shot { box-shadow: 0 30px 80px rgba(184, 149, 99, .12); }
+}

@@ -33,13 +33,13 @@ A personal workspace for tracking jobs, internships, and freelance opportunities
 
 Launchboard is a personal opportunity tracker, not a job board or freelancing marketplace. The local browser workspace and authenticated API workspace are separate and do not synchronize automatically.
 
-### HealthBridge
+### HealthBridge — [Read the case study](healthbridge-case-study.html)
 
-A comprehensive hospital management and patient portal platform that connects patients, doctors, and administrators through a unified healthcare management system.
+A full-stack hospital management platform that connects patients, doctors, and administrators in one system — a public site with a live doctor directory, email-verified registration, three role-based dashboards, and background workers that process sign-ups and deliver email. Running live on a fictional demo dataset.
 
 - **Technologies:** PHP 8+, MySQL / MariaDB, JavaScript ES6+, HTML5, CSS3, PDO, REST-style JSON APIs, Composer, Git
-- **Highlights:** Patient portal, appointment scheduling and rescheduling, a four-step booking wizard, electronic medical records, prescription tracking, doctor workspace, hospital analytics, role-based access control, and audit logging.
-- **Live demo:** [youssefhealthbridge.freehosting.dev](https://youssefhealthbridge.freehosting.dev/)
+- **Highlights:** Patient portal, appointment scheduling and rescheduling, a guided booking wizard, medical records and printouts, prescriptions with a medication tracker, doctor workspace, admin analytics, role-based access control, and audit logging.
+- **Live demo:** [youssef1.alwaysdata.net](https://youssef1.alwaysdata.net/)
 - **Repository:** [github.com/youssefmohammed12/hospital-project](https://github.com/youssefmohammed12/hospital-project)
 
 ### Flowly — [Read the case study](flowly-case-study.html)

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthBridge — Multi-Role Hospital Platform Case Study | Youssef Mohamed</title>
+  <meta name="description" content="How HealthBridge — a full-stack PHP and MariaDB hospital platform with patient, doctor, and admin dashboards, email-verified registration, and background workers — was designed, built, audited, and deployed.">
+  <meta name="author" content="Youssef Mohamed">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://youssefmohammed12.github.io/my-portfolio-website/healthbridge-case-study.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://youssefmohammed12.github.io/my-portfolio-website/healthbridge-case-study.html">
+  <meta property="og:title" content="HealthBridge — Multi-Role Hospital Platform Case Study">
+  <meta property="og:description" content="Three role dashboards, verified registration, and background workers in one PHP/MariaDB system — designed, audited, and deployed live.">
+  <meta property="og:image" content="https://youssefmohammed12.github.io/my-portfolio-website/assets/healthbridge/home.png">
+  <meta property="og:image:alt" content="HealthBridge home page with doctor search and the three role journeys">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HealthBridge — Multi-Role Hospital Platform Case Study">
+  <meta name="twitter:description" content="A PHP and MariaDB hospital platform covering a public site, three role dashboards, verified registration, workers, security auditing, and live deployment.">
+  <meta name="twitter:image" content="https://youssefmohammed12.github.io/my-portfolio-website/assets/healthbridge/home.png">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="stylesheet" href="css/healthbridge-case-study.css">
+</head>
+<body class="case-study-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="case-header"><div class="case-container case-nav">
+    <a href="index.html#home" class="logo" aria-label="Youssef Mohamed — home"><span class="logo-mark" aria-hidden="true">YM</span><span class="logo-text">Youssef <strong>Mohamed</strong></span></a>
+    <div class="case-nav-actions"><a class="btn btn-ghost btn-sm" href="index.html#projects">Back to portfolio</a><a class="btn btn-primary btn-sm" href="https://youssef1.alwaysdata.net/" target="_blank" rel="noopener noreferrer">Open live HealthBridge demo <span aria-hidden="true">↗</span></a></div>
+  </div></header>
+  <main id="main">
+    <section class="case-hero"><div class="case-container">
+      <p class="eyebrow eyebrow-light">Project case study · 02</p><p class="case-overline">Full-stack engineering / Healthcare platform</p><h1>HealthBridge<span>.</span></h1>
+      <p class="case-hero-lead">A hospital management platform that gives patients, doctors, and administrators one connected system — a public site and doctor directory, email-verified registration, three role-based dashboards, printable records, and background workers, built with PHP and MariaDB and deployed live.</p>
+      <div class="case-hero-actions"><a class="btn btn-primary" href="https://youssef1.alwaysdata.net/" target="_blank" rel="noopener noreferrer">Explore the live platform <span aria-hidden="true">↗</span></a><a class="btn btn-ghost btn-ghost-light" href="https://github.com/youssefmohammed12/hospital-project" target="_blank" rel="noopener noreferrer">View source repository <span aria-hidden="true">↗</span></a></div>
+      <figure class="case-hero-shot"><img src="assets/healthbridge/home.png" alt="HealthBridge home page with doctor search and the three role journeys" width="1440" height="900"><figcaption>Public home page · the redesigned HealthBridge interface</figcaption></figure>
+    </div></section>
+    <section class="case-facts" aria-label="Project summary"><div class="case-container case-facts-grid">
+      <div><span>Project</span><strong>Multi-role hospital platform</strong></div><div><span>Backend</span><strong>PHP · PDO · MariaDB</strong></div><div><span>Frontend</span><strong>HTML · CSS · Vanilla JS</strong></div><div><span>Deployment</span><strong>alwaysdata · Scheduled workers</strong></div>
+    </div></section>
+    <section class="case-section" id="overview"><div class="case-container case-two-col">
+      <div class="case-section-intro"><p class="eyebrow">01 / The project</p><h2>Three roles, one shared record of care.</h2></div>
+      <div class="case-copy"><p>HealthBridge is a full-stack hospital management platform. Patients find doctors and book visits, doctors run their day from a dedicated workspace, and administrators oversee departments, staff, and the audit trail — all reading and writing the same relational data.</p>
+        <p>The engineering challenge was separation without duplication: each role needs its own focused workspace, while appointments, prescriptions, and notifications have to stay consistent across all three. Access rules are enforced on the server for every request, so a patient can never reach a doctor's view of someone else's record by changing a URL or an ID.</p>
+        <div class="case-callout healthbridge-callout"><strong>Project boundary</strong><span>HealthBridge is a portfolio demonstration, not a real healthcare service. Every patient, doctor, and record in the live demo is generated fictional data, and the site should never be given real personal or medical information.</span></div>
+      </div>
+    </div></section>
+    <section class="case-section case-section-alt"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">02 / Patient experience</p><h2>From finding a doctor to holding the visit summary.</h2><p>The patient journey is the spine of the platform; the other two roles exist to serve it.</p></div>
+      <div class="case-feature-grid">
+        <article class="case-feature"><span>01</span><h3>Find the right doctor</h3><p>A public directory of 45 demo doctors across 9 departments, with department filtering, ratings, and each doctor's real availability drawn from their schedule.</p></article>
+        <article class="case-feature"><span>02</span><h3>Book against real schedules</h3><p>A guided wizard offers only slots inside the doctor's working hours, aligned to their slot length and breaks, so double-bookings cannot be created.</p></article>
+        <article class="case-feature"><span>03</span><h3>Registration that explains itself</h3><p>Sign-up is confirmed by email before the account exists. If the email, phone, or national ID is already registered, the form says so immediately instead of silently dropping the request.</p></article>
+        <article class="case-feature"><span>04</span><h3>Records in one place</h3><p>Appointments, prescriptions with a medication tracker, notifications, and printable outputs — an appointment confirmation, a visit summary, and the full medical record.</p></article>
+      </div>
+    </div></section>
+    <section class="case-section"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">03 / Doctor and admin workspaces</p><h2>Each role gets the workspace its day actually needs.</h2><p>The doctor and admin areas were designed separately rather than stretched from the patient layout.</p></div>
+      <div class="case-decision-grid">
+        <article><h3>Doctor overview</h3><p>A bento-style dashboard with today's schedule, waiting patients, and the numbers a doctor checks first, in a collapsible shell.</p></article>
+        <article><h3>Queue and appointments stay separate</h3><p>The live patient queue and the appointment book answer different questions, so they remain different pages instead of one overloaded list.</p></article>
+        <article><h3>A clinical rule for prescriptions</h3><p>Any doctor may view and print any patient's prescription in full — care is shared — but only the prescribing doctor can edit, complete, or cancel it. The rule is enforced in the service layer's SQL, not just hidden in the UI.</p></article>
+        <article><h3>Schedules inside hospital hours</h3><p>Doctor schedules validate against hospital hours (08:00–22:00). Resetting a schedule to the defaults is an admin-only action.</p></article>
+        <article><h3>Admin overview without a chart library</h3><p>Hospital totals and appointment analytics are drawn with hand-built charts — no Chart.js — alongside doctor management, ratings moderation, and a read-only audit viewer.</p></article>
+        <article><h3>An honest support inbox</h3><p>Replies reach registered users inside the app. Messages from guests are clearly labelled undeliverable instead of pretending an email was sent.</p></article>
+      </div>
+    </div></section>
+    <section class="case-section case-section-alt" id="implementation"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">04 / Implementation</p><h2>Structured PHP, an encrypted queue, and two small workers.</h2><p>The backend favors explicit, testable pieces over framework magic.</p></div>
+      <div class="case-decision-grid">
+        <article><h3>Service-layer PHP</h3><p>Object-oriented PHP with PDO prepared statements throughout. Business rules live in services; endpoints stay thin and answer with REST-style JSON.</p></article>
+        <article><h3>Encrypted registration queue</h3><p>A registration is stored encrypted in an intake queue and the account is created only when the email link is clicked. A worker processes the queue; a second check inside the worker still guards against races.</p></article>
+        <article><h3>Notification outbox</h3><p>Email is written to an outbox first and delivered by a worker over Gmail SMTP, so a slow mail server never blocks a request. One scheduled task runs both workers every minute in production.</p></article>
+        <article><h3>Role-based access, probed live</h3><p>Session authentication plus per-endpoint role checks. During the audit, 21 live cross-role and cross-patient probes were fired at the running app — every one was refused correctly.</p></article>
+        <article><h3>One frontend, nothing legacy</h3><p>The public site and all three dashboards share one design system and shared components — the same pop-up treatment, the same notification behavior — with no legacy pages or assets left in the serving path.</p></article>
+        <article><h3>Print as a feature</h3><p>Four print outputs share the platform's design language: appointment confirmation, visit summary, prescription, and the complete medical record.</p></article>
+      </div>
+    </div></section>
+    <section class="case-section"><div class="case-container case-two-col">
+      <div class="case-section-intro"><p class="eyebrow">05 / Verification and QA</p><h2>Audited before it was allowed to call itself finished.</h2></div>
+      <div class="case-copy">
+        <p>Before deployment, the codebase went through a full review pass: a line-by-line audit of <strong>105 API endpoints across 133 PHP files</strong> found zero verified high-severity issues, and the findings it did raise — an unprotected <code>.env</code> path, one password path skipping the shared validator, a rate limiter that failed closed — were fixed and re-verified.</p>
+        <p>A final freeze round added loading skeletons and request timeouts, corrected status bucketing for past appointments, and closed with a regression sweep of <strong>76 page loads without a failure</strong>. The core palette measures at least <strong>4.61:1 contrast (WCAG AA)</strong>.</p>
+        <p>After deployment, the complete account lifecycle was proven on the live site: register, receive the verification email, confirm, sign in, book a Cardiology appointment, reset the password by email, and sign in again — followed by a live probe confirming duplicate registrations are refused up front with a clear message.</p>
+        <p class="case-small-note">These are project-specific engineering checks and live probes, not a formal security certification or a published Lighthouse / Core Web Vitals score.</p>
+      </div>
+    </div></section>
+    <section class="case-section case-section-alt"><div class="case-container">
+      <div class="case-section-heading"><p class="eyebrow">06 / Interface gallery</p><h2>One design language, from the public site to the admin overview.</h2><p>Captures from the completed interface, taken after full render.</p></div>
+      <h3 class="gallery-subheading">Public site</h3>
+      <div class="case-gallery case-gallery-landscape" data-gallery="healthbridge-public">
+        <figure class="g-item"><img src="assets/healthbridge/home.png" alt="HealthBridge home page with doctor search and the three role journeys" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Home</strong><span>Doctor search and the three role journeys</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/healthbridge/doctors.png" alt="HealthBridge doctor directory with departments and sample specialist profiles" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Doctor directory</strong><span>Departments, sample profiles and availability</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/healthbridge/services.png" alt="HealthBridge capabilities page showing how patients, doctors and admins connect in one system" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Capabilities</strong><span>How the three roles connect in one system</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/healthbridge/about.png" alt="HealthBridge about page telling the project's build story" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>About</strong><span>The project's build story</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/healthbridge/contact.png" alt="HealthBridge feedback page for comments about the demonstration" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Feedback</strong><span>Comments about the demonstration itself</span></figcaption></figure>
+      </div>
+      <h3 class="gallery-subheading">Accounts</h3>
+      <div class="case-gallery case-gallery-landscape" data-gallery="healthbridge-accounts">
+        <figure class="g-item"><img src="assets/healthbridge/login.png" alt="HealthBridge sign-in page with one-click demo access for patient, doctor and admin" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Sign-in</strong><span>One-click demo access for all three roles</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/healthbridge/register.png" alt="HealthBridge three-step patient registration with a live profile preview" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Registration</strong><span>Three steps with a live profile preview</span></figcaption></figure>
+      </div>
+      <h3 class="gallery-subheading">Role dashboards</h3>
+      <div class="case-gallery case-gallery-landscape" data-gallery="healthbridge-dashboards">
+        <figure class="g-item"><img src="assets/healthbridge/patient-dashboard.png" alt="HealthBridge patient dashboard with next appointment and profile completeness" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Patient dashboard</strong><span>Next appointment and profile completeness</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/healthbridge/doctor-dashboard.png" alt="HealthBridge doctor dashboard with today's schedule and patient queue summary" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Doctor dashboard</strong><span>Today's schedule and patient queue</span></figcaption></figure>
+        <figure class="g-item"><img src="assets/healthbridge/admin-overview.png" alt="HealthBridge admin overview with hospital totals and an appointment status chart" width="1440" height="900" loading="lazy" decoding="async"><figcaption><strong>Admin overview</strong><span>Hospital totals and appointment analytics</span></figcaption></figure>
+      </div>
+    </div></section>
+    <section class="case-section"><div class="case-container case-two-col">
+      <div class="case-section-intro"><p class="eyebrow">07 / Product boundaries</p><h2>A complete demo, honest about being one.</h2></div>
+      <div class="case-copy"><p>The live site runs on a generated dataset — 45 doctors, 500 patients, and roughly 3,000 appointments with consistent schedules, prescriptions, and ratings — so every workflow can be explored end to end. The three demo accounts are public by design, and the data resets are part of the demonstration.</p>
+        <div class="case-callout healthbridge-callout"><strong>What the project does not claim</strong><span>HealthBridge is not a real healthcare service and holds no real patient data. It does not process payments, and it should never receive real personal or medical information. Registration sends a genuine verification email — use a disposable address if you try it.</span></div>
+        <p>Those boundaries are deliberate: the case study documents a fully working multi-role system without dressing a portfolio project up as a production medical product.</p>
+      </div>
+    </div></section>
+    <section class="case-outro"><div class="case-container">
+      <p class="eyebrow eyebrow-light">Explore the project</p><h2>Open the live platform and walk in as any role.</h2><p>The demo uses fictional shared data. Use the Demo Access buttons on the sign-in page to explore the patient, doctor, and admin workspaces, and never enter real personal details.</p>
+      <div class="case-hero-actions">
+        <a class="btn btn-primary" href="https://youssef1.alwaysdata.net/" target="_blank" rel="noopener noreferrer">Open live site <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-ghost-light" href="https://youssef1.alwaysdata.net/pages/auth/login.html" target="_blank" rel="noopener noreferrer">Sign in with demo access <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-ghost-light" href="https://github.com/youssefmohammed12/hospital-project" target="_blank" rel="noopener noreferrer">Source repository <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-ghost btn-ghost-light" href="index.html#projects">Back to portfolio</a>
+      </div>
+      <p class="case-private-note">HealthBridge is a portfolio demonstration using fictional data. It is not a healthcare service.</p>
+    </div></section>
+  </main>
+  <footer class="case-footer"><div class="case-container"><span>© 2026 Youssef Mohamed</span><a href="index.html#home">Back to portfolio ↑</a></div></footer>
+  <script src="js/gallery.js?v=20261104-gallery-system" defer></script>
+</body>
+</html>

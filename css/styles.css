@@ -18,9 +18,9 @@
   --coral-dark: #e14e38;
   --coral-soft: #ffe9e5;
   --sky: #0284c7;
-  --healthbridge-accent: #176fae;
-  --healthbridge-dark: #125b91;
-  --healthbridge-soft: #e9f4fb;
+  --healthbridge-accent: #17645f;
+  --healthbridge-dark: #102b2b;
+  --healthbridge-soft: #e9efe7;
   --flowly-accent: #b83d31;
   --flowly-dark: #a83229;
   --flowly-soft: #fff0ed;
@@ -150,7 +150,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 
 .btn-flowly { background: var(--flowly-accent); box-shadow: 0 6px 18px rgba(184, 61, 49, .28); }
 .btn-flowly:hover { background: var(--flowly-dark); color: #fff; }
-.btn-healthbridge { background: var(--healthbridge-accent); box-shadow: 0 6px 18px rgba(23, 111, 174, .28); }
+.btn-healthbridge { background: var(--healthbridge-accent); box-shadow: 0 6px 18px rgba(23, 100, 95, .30); }
 .btn-healthbridge:hover { background: var(--healthbridge-dark); color: #fff; }
 .btn-nova { background: #a94f2c; box-shadow: 0 6px 18px rgba(169, 79, 44, .28); }
 .btn-nova:hover { background: #8a3e20; }
@@ -648,7 +648,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   background: var(--navy);
   color: #b8f0e6;
 }
-#project-healthbridge .tech-row li { background: #123654; color: #d8eefe; }
+#project-healthbridge .tech-row li { background: #102b2b; color: #edf3ee; }
 #project-flowly .tech-row li { background: #4a1f24; color: #ffe0dc; }
 #project-nova-home .tech-row li { background: #3b3028; color: #f6ddcf; }
 
@@ -679,6 +679,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .feature-dot-coral { background: var(--coral); }
 .feature-dot-nova { background: #a94f2c; }
 #project-healthbridge .feature-dot-teal { background: var(--healthbridge-accent); }
+#project-healthbridge .feature-dot-blue { background: #b89563; }
+#project-healthbridge .feature-dot-navy { background: #102b2b; }
 #project-flowly .feature-dot-coral { background: var(--flowly-accent); }
 .feature-col ul { display: grid; gap: .42rem; }
 .feature-col li {
@@ -728,7 +730,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   color: var(--accent);
   font-size: .82rem;
 }
-#project-healthbridge .highlight-card { border-left-color: var(--healthbridge-accent); background: #f7fbfe; }
+#project-healthbridge .highlight-card { border-left-color: var(--healthbridge-accent); background: #f8f7f1; }
 #project-healthbridge .highlight-card li::before { color: var(--healthbridge-accent); }
 
 /* ---------- architecture ---------- */
@@ -766,10 +768,10 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .arch-node-sub { display: block; font-size: .78rem; color: #7dd3c8; margin-top: .15rem; }
 .arch-node:last-child { border-color: rgba(94, 234, 212, .55); background: #0e2a26; }
 .arch-arrow { color: #2dd4bf; font-size: 1.15rem; line-height: 1; }
-#project-healthbridge .arch-node { border-color: rgba(23, 111, 174, .32); }
-#project-healthbridge .arch-node-sub { color: #9bcff0; }
-#project-healthbridge .arch-node:last-child { border-color: rgba(76, 164, 219, .62); background: #123451; }
-#project-healthbridge .arch-arrow { color: #67b9e8; }
+#project-healthbridge .arch-node { border-color: rgba(23, 100, 95, .35); }
+#project-healthbridge .arch-node-sub { color: #d9bf96; }
+#project-healthbridge .arch-node:last-child { border-color: rgba(184, 149, 99, .65); background: #102b2b; }
+#project-healthbridge .arch-arrow { color: #b89563; }
 
 /* ---------- shared screenshot galleries ---------- */
 .gallery-wrap { margin-top: .5rem; }
@@ -825,7 +827,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 #project-healthbridge .g-item:focus-visible { outline-color: var(--healthbridge-accent); }
 #project-flowly .g-item:focus-visible { outline-color: var(--flowly-accent); }
 #project-nova-home .g-item:focus-visible { outline-color: #a94f2c; }
-#project-healthbridge .g-item:hover { border-color: #a9cde8; }
+#project-healthbridge .g-item:hover { border-color: #b89563; }
 #project-flowly .g-item:hover { border-color: #e7b6b0; }
 #project-nova-home .g-item:hover { border-color: #dec0b0; }
 .g-item img {
@@ -1403,4 +1405,44 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   .lb-next { right: 8px; }
   .lb-prev, .lb-next { width: 44px; height: 44px; }
   .lightbox { padding: 3.4rem 3.4rem 2rem; }
+}
+
+/* ---------- Project motion polish — all projects, each in its own accent
+   (transform/opacity only; off for reduced motion) ---------- */
+.project .g-item { overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  .project .g-item { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+  .project .g-item img { transition: transform .5s ease; }
+  .project .g-item:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(15, 23, 42, .16); }
+  .project .g-item:hover img { transform: scale(1.03); }
+  .project .feature-col,
+  .project .highlight-card { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .project .feature-col:hover,
+  .project .highlight-card:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(15, 23, 42, .10); }
+  #project-launchboard .feature-col:hover, #project-launchboard .highlight-card:hover { border-color: #5eead4; }
+  #project-healthbridge .feature-col:hover, #project-healthbridge .highlight-card:hover { border-color: rgba(184, 149, 99, .55); }
+  #project-flowly .feature-col:hover, #project-flowly .highlight-card:hover { border-color: #e7b6b0; }
+  #project-nova-home .feature-col:hover, #project-nova-home .highlight-card:hover { border-color: #dec0b0; }
+  .project .tech-row li { transition: background-color .25s ease, transform .25s ease; }
+  .project .tech-row li:hover { transform: translateY(-2px); }
+  #project-launchboard .tech-row li:hover { background: var(--accent); }
+  #project-healthbridge .tech-row li:hover { background: var(--healthbridge-accent); }
+  #project-flowly .tech-row li:hover { background: var(--flowly-accent); }
+  #project-nova-home .tech-row li:hover { background: #a94f2c; }
+  .project .project-links .btn-primary { position: relative; overflow: hidden; transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease; }
+  .project .project-links .btn-primary::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, .35) 50%, transparent 70%);
+    transform: translateX(-120%); transition: transform .6s ease;
+  }
+  .project .project-links .btn-primary:hover { transform: translateY(-2px); }
+  .project .project-links .btn-primary:hover::after { transform: translateX(120%); }
+  #project-healthbridge .arch-arrow { animation: hb-flow 2.4s ease-in-out infinite; }
+  #project-healthbridge .arch-flow .arch-arrow:nth-child(4) { animation-delay: .3s; }
+  #project-healthbridge .arch-flow .arch-arrow:nth-child(6) { animation-delay: .6s; }
+  #project-healthbridge .arch-flow .arch-arrow:nth-child(8) { animation-delay: .9s; }
+  @keyframes hb-flow {
+    0%, 100% { transform: translateY(0); opacity: .55; }
+    50% { transform: translateY(3px); opacity: 1; }
+  }
 }

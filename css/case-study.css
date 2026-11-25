@@ -158,3 +158,15 @@
     text-align: center;
   }
 }
+
+/* Motion polish — all case studies, in each page's own accent
+   (transform/opacity only; off for reduced motion). */
+.case-gallery .g-item { overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  .case-feature, .case-decision-grid article { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .case-feature:hover, .case-decision-grid article:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(15, 23, 42, .10); border-color: var(--accent); }
+  .case-gallery .g-item { transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease; }
+  .case-gallery .g-item img { transition: transform .5s ease; }
+  .case-gallery .g-item:hover { transform: translateY(-4px); box-shadow: 0 16px 34px rgba(15, 23, 42, .16); border-color: var(--accent); }
+  .case-gallery .g-item:hover img { transform: scale(1.03); }
+}
